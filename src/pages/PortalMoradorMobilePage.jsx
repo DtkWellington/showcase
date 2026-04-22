@@ -14,7 +14,7 @@ const mobileHighlights = [
   },
   {
     title: "Integraçãocom o detk Acesso",
-    text: "O app se conecta ao ecossistema do condominio para apoiar liberacoes, acompanhamento de acessos e comunicacao com a administração.",
+    text: "O app se conecta ao ecossistema do condominio para apoiar liberacoes, acompanhamento de acessos e comunicação com a administração.",
   },
 ];
 
@@ -45,7 +45,7 @@ const residentModules = [
       "Na tela inicial, o morador pode acionar rapidamente o recurso em situacoes entendidas como de extrema emergencia.",
   },
   {
-    title: "Comunicacao com a administração",
+    title: "comunicação com a administração",
     description:
       "O app aproxima o morador da administração com informações oficiais, avisos relevantes e tratativas ligadas a rotina da residência.",
   },
@@ -59,7 +59,7 @@ const mobileTimeline = [
   },
   {
     step: "02",
-    title: "Consultar informacoes",
+    title: "Consultar informações",
     text: "Avisos, documentos, acessos, reservas e outros dados importantes ficam disponiveis em um unico lugar.",
   },
   {
@@ -91,7 +91,7 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Ficha de Viagem",
       description:
-        "Registre ausencia, notifique a administração e acompanhe a tratativa com chat integrado para comunicacao direta.",
+        "Registre ausencia, notifique a administração e acompanhe a tratativa com chat integrado para comunicação direta.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/FichaViagem.png",
     },
@@ -224,7 +224,7 @@ export default function PortalMoradorMobilePage() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
             Uma experiencia pensada para moradores com mais organizacao,
-            comunicacao e seguranca em um so lugar.
+            comunicação e seguranca em um so lugar.
           </p>
         </div>
 
@@ -268,7 +268,7 @@ export default function PortalMoradorMobilePage() {
 
           <p className="max-w-xl text-base leading-8 text-slate-300">
             Esta e a versao voltada para o morador, reunindo recursos praticos
-            para consulta, organizacao da rotina e comunicacao com a
+            para consulta, organizacao da rotina e comunicação com a
             administração.
           </p>
         </div>

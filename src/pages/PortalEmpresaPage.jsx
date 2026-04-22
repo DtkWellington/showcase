@@ -6,7 +6,7 @@ import { Copyright } from "../components/portal/Copyright";
 const overviewCards = [
   {
     title: "Home",
-    text: "Acesso as funcionalidades para gerenciamento e visualizacao das informacoes cadastradas.",
+    text: "Acesso as funcionalidades para gerenciamento e visualização  das informações cadastradas.",
   },
   {
     title: "Departamentos e setores",
@@ -17,8 +17,8 @@ const overviewCards = [
     text: "Cadastro de cargos de acordo com a rotina de cada colaborador.",
   },
   {
-    title: "Cartoes",
-    text: "Cadastro e vinculacao de cartoes ao colaborador, com habilitacao de acesso.",
+    title: "Cartões",
+    text: "Cadastro e vinculação de cartões ao colaborador, com habilitacao de acesso.",
   },
 ];
 
@@ -27,9 +27,9 @@ const featureGroups = [
     id: "01",
     title: "Dashboard",
     description:
-      "Visao geral da operacao com informacoes de agendamentos e acessos autorizados",
+      "visão geral da operação com informações de agendamentos e acessos autorizados",
     items: [
-      "Tela inicial com visao geral da operacao diaria",
+      "Tela inicial com visão geral da operação diaria",
       "Fluxos de acessos diarios e pessoas no predio",
       "Fluxo de convites previstos para o dia",
     ],
@@ -53,11 +53,11 @@ const featureGroups = [
     id: "03",
     title: "Cadastro de funcionarios e estrutura da empresa",
     description:
-      "Cadastro e gerenciamento das informacoes dos funcionarios, com organizacao de departamentos, setores, cargos e cartoes de acesso.",
+      "Cadastro e gerenciamento das informações dos funcionarios, com organizacao de departamentos, setores, cargos e cartões de acesso.",
     items: [
       "Funcionarios centralizados em uma unica base",
       "Departamentos e setores conforme a rotina da empresa",
-      "Cartoes e cargos vinculados ao cadastro do colaborador",
+      "cartões e cargos vinculados ao cadastro do colaborador",
     ],
     image:
       "https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/cadastro_de_funcionarios.png",
@@ -67,11 +67,11 @@ const featureGroups = [
 const supportModules = [
   {
     title: "Reserva de espaco",
-    text: "Caso a empresa possua salas de reuniao, e possivel cadastra-las para uso interno dos funcionarios habilitados.",
+    text: "Caso a empresa possua salas de reunião, e possivel cadastra-las para uso interno dos funcionarios habilitados.",
   },
   {
     title: "Documentos",
-    text: "Publicacao de arquivos referentes a rotina do condominio em um ambiente unico de consulta.",
+    text: "Publicação de arquivos referentes a rotina do condominio em um ambiente unico de consulta.",
   },
   {
     title: "Mural",
@@ -79,11 +79,11 @@ const supportModules = [
   },
   {
     title: "Acessos",
-    text: "Visualizacao completa dos acessos vinculados aos agendamentos previamente autorizados.",
+    text: "visualização  completa dos acessos vinculados aos agendamentos previamente autorizados.",
   },
   {
     title: "Acessos funcionarios",
-    text: "Visualizacao dos registros de acesso de todos os funcionarios cadastrados na base da empresa.",
+    text: "visualização  dos registros de acesso de todos os funcionarios cadastrados na base da empresa.",
   },
 ];
 
@@ -91,22 +91,22 @@ const processTimeline = [
   {
     step: "01",
     title: "Acesso a home",
-    text: "A empresa entra no portal e visualiza rapidamente as informacoes e funcionalidades disponiveis para a rotina operacional.",
+    text: "A empresa entra no portal e visualiza rapidamente as informações e funcionalidades disponiveis para a rotina operacional.",
   },
   {
     step: "02",
     title: "Organizacao da base",
-    text: "Funcionarios, departamentos, setores, cargos e cartoes sao cadastrados para estruturar corretamente os perfis e acessos.",
+    text: "Funcionarios, departamentos, setores, cargos e cartões sao cadastrados para estruturar corretamente os perfis e acessos.",
   },
   {
     step: "03",
-    title: "Agendamentos e autorizacoes",
+    title: "Agendamentos e autorizações",
     text: "Visitantes e prestadores de servico sao pre-autorizados por categoria, com controle mais claro sobre cada entrada prevista.",
   },
   {
     step: "04",
-    title: "Rotina e comunicacao",
-    text: "Reservas, documentos, comunicados e enquetes ficam disponiveis em um unico ambiente para uso interno e comunicacao continua.",
+    title: "Rotina e comunicação",
+    text: "Reservas, documentos, comunicados e enquetes ficam disponiveis em um unico ambiente para uso interno e comunicação continua.",
   },
   {
     step: "05",
@@ -130,19 +130,19 @@ const benefits = [
   {
     title: "Agilidade Operacional",
     description:
-      "Reduza o tempo de espera na recepcao com pre-autorizacoes enviadas diretamente pelo portal.",
+      "Reduza o tempo de espera na recepcao com pre-autorizações enviadas diretamente pelo portal.",
     icon: "",
   },
   {
     title: "Conformidade LGPD",
     description:
-      "Gestao segura dos dados de visitantes e funcionarios, seguindo as normas de protecao de dados.",
+      "Gestao segura dos dados de visitantes e funcionarios, seguindo as normas de proteção de dados.",
     icon: "",
   },
   {
-    title: "Reducao de Erros",
+    title: "Redução  de Erros",
     description:
-      "Elimine falhas de comunicacao entre a empresa e a administracao com um canal centralizado.",
+      "Elimine falhas de comunicação entre a empresa e a administraçãocom um canal centralizado.",
     icon: "",
   },
 ];
@@ -202,13 +202,13 @@ export default function PortalEmpresaPage() {
 
               <div className="space-y-5">
                 <h1 className="max-w-4xl font-['Syne'] text-[2.7rem] leading-[0.92] tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl">
-                  Mais controle, autonomia e comunicacao.
+                  Mais controle, autonomia e comunicação.
                 </h1>
 
                 <p className="max-w-xl font-['Manrope'] text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 md:text-xl">
-                  O Portal Empresa foi desenvolvido para concentrar informacoes,
+                  O Portal Empresa foi desenvolvido para concentrar informações,
                   acessos e funcionalidades em um unico ambiente, facilitando a
-                  operacao diaria e a comunicacao com a administracao do
+                  operação diaria e a comunicação com a administração do
                   condominio.
                 </p>
               </div>
@@ -296,12 +296,12 @@ export default function PortalEmpresaPage() {
               Finalidade
             </p>
             <h2 className="mt-4 max-w-md font-['Syne'] text-4xl leading-tight tracking-[-0.05em]">
-              Um unico ambiente para aproximar empresa e administracao.
+              Um unico ambiente para aproximar empresa e administração.
             </h2>
             <p className="mt-5 max-w-lg font-['Manrope'] text-base leading-8 text-slate-300">
               A solucao tem como objetivo proporcionar maior controle e
-              autonomia sobre as informacoes da empresa, oferecendo recursos que
-              auxiliam a comunicacao com a administracao do condominio.
+              autonomia sobre as informações da empresa, oferecendo recursos que
+              auxiliam a comunicação com a administração do condominio.
             </p>
           </div>
 
@@ -336,9 +336,9 @@ export default function PortalEmpresaPage() {
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              Da visualizacao inicial na home aos registros de acesso, a
-              plataforma centraliza agendamentos, colaboradores, comunicacao e
-              informacoes operacionais em um unico fluxo.
+              Da visualização  inicial na home aos registros de acesso, a
+              plataforma centraliza agendamentos, colaboradores, comunicação e
+              informações operacionais em um unico fluxo.
             </p>
           </div>
 
@@ -408,13 +408,13 @@ export default function PortalEmpresaPage() {
                 Recursos complementares
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                Mais funcionalidades para apoiar a operacao diaria.
+                Mais funcionalidades para apoiar a operação diaria.
               </h2>
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
               O portal amplia a experiencia com recursos que fortalecem
-              comunicacao, reservas, documentos e consulta de historicos.
+              comunicação, reservas, documentos e consulta de historicos.
             </p>
           </div>
 
@@ -444,14 +444,14 @@ export default function PortalEmpresaPage() {
                 Processo da plataforma
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                Como o Portal Empresa acompanha a operacao do inicio ao controle
+                Como o Portal Empresa acompanha a operação do inicio ao controle
                 final.
               </h2>
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
               A jornada foi organizada para mostrar como a plataforma centraliza
-              cadastro, autorizacao, comunicacao e consulta de acessos em um so
+              cadastro, autorizacao, comunicação e consulta de acessos em um so
               fluxo.
             </p>
           </div>
@@ -494,12 +494,12 @@ export default function PortalEmpresaPage() {
                 Portal Empresa
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
-                Uma plataforma completa para conectar empresa e administracao
+                Uma plataforma completa para conectar empresa e administração
                 com mais eficiencia.
               </h2>
               <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
                 Reuna gestao de visitantes, cadastro de colaboradores,
-                departamentos, cargos, cartoes, reservas, documentos, mural e
+                departamentos, cargos, cartões, reservas, documentos, mural e
                 historico de acessos em uma experiencia unica.
               </p>
             </div>

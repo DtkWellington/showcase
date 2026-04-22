@@ -93,7 +93,7 @@ export default function PortalEmpresaMobilePage() {
       description:
         "Extensão prática da experiência web para uso fora da mesa de trabalho.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app_visualizacao.png",
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app_visualização .png",
     },
   ];
 

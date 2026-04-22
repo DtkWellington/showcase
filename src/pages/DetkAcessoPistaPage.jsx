@@ -26,7 +26,7 @@ const features = [
   {
     title: "Integraçãocom Catracas",
     description:
-      "Comunicacao com sistemas de catraca e cancelas para controle total.",
+      "comunicação com sistemas de catraca e cancelas para controle total.",
     image:
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/acesso-pista/integracao.png",
   },

@@ -10,19 +10,19 @@ const benefits = [
   {
     title: "Agilidade Operacional",
     description:
-      "Reduza o tempo de espera na recepcao com pre-autorizacoes enviadas diretamente pelo portal.",
+      "Reduza o tempo de espera na recepcao com pre-autorizações enviadas diretamente pelo portal.",
     icon: "",
   },
   {
     title: "Conformidade LGPD",
     description:
-      "Gestao segura dos dados de visitantes e funcionarios, seguindo as normas de protecao de dados.",
+      "Gestao segura dos dados de visitantes e funcionarios, seguindo as normas de proteção de dados.",
     icon: "",
   },
   {
-    title: "Reducao de Erros",
+    title: "Redução  de Erros",
     description:
-      "Elimine falhas de comunicacao entre a empresa e a administracao com um canal centralizado.",
+      "Elimine falhas de comunicação entre a empresa e a administração com um canal centralizado.",
     icon: "",
   },
 ];
@@ -33,9 +33,9 @@ const adminModules = [
     description:
       "Acesso mais simples e seguro para visitantes, prestadores de servico",
     items: [
-      "Mais praticidade para administracao",
-      "Informacoes claras para os moradores",
-      "Informacoes em tempo real sobre",
+      "Mais praticidade para administração",
+      "informações claras para os moradores",
+      "informações em tempo real sobre",
     ],
     image:
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app%20_convites_de_acesso.png",
@@ -58,11 +58,11 @@ const adminModules = [
     description: "Mais seguranca e confiabilidade no dia a dia.",
     items: [
       "Autenticacao segura",
-      "Controle de acesso para a administracao",
-      "Informacoes em tempo real sobre a movimentacao do condominio",
+      "Controle de acesso para a administração",
+      "informações em tempo real sobre a movimentacao do condominio",
     ],
     image:
-      "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app_visualizacao.png",
+      "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app_visualização .png",
   },
 ];
 
@@ -79,11 +79,11 @@ const adminTimeline = [
   {
     step: "01",
     title: "Centralizar a informacao",
-    text: "A administracao organiza comunicados, documentos e materiais importantes em um ambiente unico.",
+    text: "A administração organiza comunicados, documentos e materiais importantes em um ambiente unico.",
   },
   {
     step: "02",
-    title: "Acompanhar a operacao",
+    title: "Acompanhar a operação",
     text: "Reservas, encomendas e registros passam a ser tratados com mais visibilidade e menos dependencia de fluxos informais.",
   },
   {
@@ -138,14 +138,14 @@ export default function PortalMoradorPage() {
 
               <div className="space-y-5">
                 <h1 className="max-w-4xl font-['Syne'] text-[2.7rem] leading-[0.94] tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl">
-                  O Detk Portal Morador na operacao da administracao.
+                  O Detk Portal Morador na operação da administração.
                 </h1>
 
                 <p className="max-w-xl font-['Manrope'] text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 md:text-xl">
-                  A versao web e exclusiva para a administracao do condominio e
+                  A versao web e exclusiva para a administração do condominio e
                   foi desenvolvida para organizar a rotina, centralizar
-                  comunicacoes e dar mais controle sobre as informacoes ligadas
-                  aos moradores e as residencias.
+                  comunicacoes e dar mais controle sobre as informações ligadas
+                  aos moradores e as residências.
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row">
@@ -232,13 +232,13 @@ export default function PortalMoradorPage() {
                 Funcionalidades em destaque
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                O que fica na parte web da administracao.
+                O que fica na parte web da administração.
               </h2>
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              A versao web concentra o que a administracao precisa para
-              comunicar, organizar e acompanhar a operacao do condominio.
+              A versao web concentra o que a administração precisa para
+              comunicar, organizar e acompanhar a operação do condominio.
             </p>
           </div>
 
@@ -304,8 +304,8 @@ export default function PortalMoradorPage() {
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              A administracao ganha uma base mais clara para informar,
-              documentar e apoiar a operacao de forma consistente.
+              A administração ganha uma base mais clara para informar,
+              documentar e apoiar a operação de forma consistente.
             </p>
           </div>
 
@@ -332,7 +332,7 @@ export default function PortalMoradorPage() {
                 Jornada web
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                Como a administracao usa o portal na pratica.
+                Como a administração usa o portal na pratica.
               </h2>
             </div>
 
@@ -380,12 +380,12 @@ export default function PortalMoradorPage() {
                 Portal Morador Web
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
-                A parte web cuida da administracao. O app cuida da rotina do
+                A parte web cuida da administração. O app cuida da rotina do
                 morador.
               </h2>
               <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
-                Essa separacao deixa a operacao mais clara para o condominio:
-                administracao com mais controle no desktop e moradores com mais
+                Essa separacao deixa a operação mais clara para o condominio:
+                administração com mais controle no desktop e moradores com mais
                 autonomia no celular.
               </p>
             </div>
