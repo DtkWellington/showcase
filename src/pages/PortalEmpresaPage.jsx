@@ -151,12 +151,12 @@ const faqItems = [
   {
     question: "Como os visitantes recebem o acesso?",
     answer:
-      "Apos o agendamento no portal, o visitante recebe as instrucoes de acesso, que podem incluir QR Codes ou liberacao via documento na portaria.",
+      "Apos o agendamento no portal, o visitante recebe as instrucoes de acesso, que podem incluir QR Codes ou liberação via documento na portaria.",
   },
   {
     question: "O portal funciona em dispositivos moveis?",
     answer:
-      "Sim! O Portal Empresa e totalmente responsivo e tambem possui uma versao em aplicativo para maior comodidade.",
+      "Sim! O Portal Empresa e totalmente responsivo e tambem possui uma versão em aplicativo para maior comodidade.",
   },
   {
     question: "E possivel extrair relatorios de acesso?",
@@ -413,7 +413,7 @@ export default function PortalEmpresaPage() {
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              O portal amplia a experiencia com recursos que fortalecem
+              O portal amplia a experiência com recursos que fortalecem
               comunicação, reservas, documentos e consulta de historicos.
             </p>
           </div>
@@ -500,7 +500,7 @@ export default function PortalEmpresaPage() {
               <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
                 Reuna gestao de visitantes, cadastro de colaboradores,
                 departamentos, cargos, cartões, reservas, documentos, mural e
-                historico de acessos em uma experiencia unica.
+                historico de acessos em uma experiência unica.
               </p>
             </div>
 
@@ -510,7 +510,7 @@ export default function PortalEmpresaPage() {
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#07111B] transition hover:bg-[#eef7ff]"
               >
-                Versao app
+                Versão app
               </Link>
 
               <Link

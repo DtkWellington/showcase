@@ -47,15 +47,15 @@ const adminModules = [
     items: [
       "Organizacao das entregas para os moradores",
       "Historico centralizado para consulta recorrente",
-      "Mais transparencia no relacionamento com os condominos",
+      "Mais transparência no relacionamento com os condominos",
     ],
     image:
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Encomenda%20(2).png",
   },
   {
     id: "03",
-    title: "Seguranca e controle de acesso",
-    description: "Mais seguranca e confiabilidade no dia a dia.",
+    title: "segurança e controle de acesso",
+    description: "Mais segurança e confiabilidade no dia a dia.",
     items: [
       "Autenticacao segura",
       "Controle de acesso para a administração",
@@ -72,7 +72,7 @@ const adminFeatures = [
   "Historico de Acesso",
   "Reservas de espacos",
   "Ficha de Viagem",
-  "Botao de panico para emergencias",
+  "Botao de pânicopara emergencias",
 ];
 
 const adminTimeline = [
@@ -142,7 +142,7 @@ export default function PortalMoradorPage() {
                 </h1>
 
                 <p className="max-w-xl font-['Manrope'] text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 md:text-xl">
-                  A versao web e exclusiva para a administração do condominio e
+                  A versâo web e exclusiva para a administração do condominio e
                   foi desenvolvida para organizar a rotina, centralizar
                   comunicacoes e dar mais controle sobre as informações ligadas
                   aos moradores e as residências.
@@ -237,7 +237,7 @@ export default function PortalMoradorPage() {
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              A versao web concentra o que a administração precisa para
+              A versâo web concentra o que a administração precisa para
               comunicar, organizar e acompanhar a operação do condominio.
             </p>
           </div>
@@ -337,7 +337,7 @@ export default function PortalMoradorPage() {
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              A experiencia web foi organizada para transformar a rotina do
+              A experiência web foi organizada para transformar a rotina do
               condominio em um fluxo mais simples e confiavel.
             </p>
           </div>
@@ -396,7 +396,7 @@ export default function PortalMoradorPage() {
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#07111B] transition hover:bg-[#eef7ff]"
               >
-                Versao app
+                Versâo app
               </Link>
 
               <Link

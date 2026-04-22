@@ -24,7 +24,7 @@ const features = [
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/acesso-pista/relatorios.png",
   },
   {
-    title: "Integraçãocom Catracas",
+    title: "Integração com Catracas",
     description:
       "comunicação com sistemas de catraca e cancelas para controle total.",
     image:
@@ -85,7 +85,7 @@ export default function DetkAcessoPistaPage() {
                 </h1>
                 <p className="max-w-xl text-lg leading-8 text-slate-300 md:text-xl">
                   Sistema de controle de acesso para pistas com identificacao
-                  automatizada, monitoramento 24h e seguranca avancada.
+                  automatizada, monitoramento 24h e segurança avancada.
                 </p>
               </div>
 
@@ -114,7 +114,7 @@ export default function DetkAcessoPistaPage() {
                   </p>
                 </div>
                 <div className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-md">
-                  <p className="text-sm text-slate-400">Seguranca</p>
+                  <p className="text-sm text-slate-400">segurança</p>
                   <p className="mt-2 font-medium text-white">
                     Controle rigoroso
                   </p>

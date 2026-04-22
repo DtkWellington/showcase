@@ -5,7 +5,7 @@ import { Copyright } from "../components/portal/Copyright";
 
 const mobileHighlights = [
   {
-    title: "Versao app exclusiva",
+    title: "Versão app exclusiva",
     text: "O aplicativo foi desenvolvido para o morador, com foco em autonomia, praticidade e acesso rapido as informações da residência.",
   },
   {
@@ -13,7 +13,7 @@ const mobileHighlights = [
     text: "Visitantes, encomendas, reservas, comunicados e outros recursos ficam reunidos em um unico ambiente no celular.",
   },
   {
-    title: "Integraçãocom o detk Acesso",
+    title: "Integração com o detk Acesso",
     text: "O app se conecta ao ecossistema do condominio para apoiar liberacoes, acompanhamento de acessos e comunicação com a administração.",
   },
 ];
@@ -22,7 +22,7 @@ const residentModules = [
   {
     title: "Agendamento de visitantes",
     description:
-      "Realize o agendamento de visitantes de forma simples e rapida, com liberacao automatica de acesso no momento da entrada e dupla checagem no check-in.",
+      "Realize o agendamento de visitantes de forma simples e rapida, com liberação automatica de acesso no momento da entrada e dupla checagem no check-in.",
   },
   {
     title: "Histórico de acesso",
@@ -40,9 +40,9 @@ const residentModules = [
       "Visualize disponibilidade, faca agendamentos e garanta o uso organizado das areas compartilhadas do condominio.",
   },
   {
-    title: "Botao de panico (SOS)",
+    title: "Botao de pânico(SOS)",
     description:
-      "Na tela inicial, o morador pode acionar rapidamente o recurso em situacoes entendidas como de extrema emergencia.",
+      "Na tela inicial, o morador pode acionar rapidamente o recurso em situações entendidas como de extrema emergencia.",
   },
   {
     title: "comunicação com a administração",
@@ -55,7 +55,7 @@ const mobileTimeline = [
   {
     step: "01",
     title: "Entrar no app",
-    text: "O morador acessa o Portal Morador pelo celular com uma experiencia preparada para uso rapido no dia a dia.",
+    text: "O morador acessa o Portal Morador pelo celular com uma experiência preparada para uso rapido no dia a dia.",
   },
   {
     step: "02",
@@ -91,14 +91,14 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Ficha de Viagem",
       description:
-        "Registre ausencia, notifique a administração e acompanhe a tratativa com chat integrado para comunicação direta.",
+        "Registre a ausencia, notifique a administração e acompanhe a tratativa com chat integrado para comunicação direta.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/FichaViagem.png",
     },
     {
       title: "Encomendas",
       description:
-        "Receba notificacoes sobre entregas e acompanhe o processo de retirada com mais agilidade e transparencia.",
+        "Receba notificações sobre entregas e acompanhe o processo de retirada com mais agilidade e transparência.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Encomenda%20(2).png",
     },
@@ -112,7 +112,7 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Autenticação no App",
       description:
-        "Mais seguranca para acessar os recursos do Portal Morador e usar o aplicativo com confiabilidade no dia a dia.",
+        "Mais segurança para acessar os recursos do Portal Morador e usar o aplicativo com confiabilidade no dia a dia.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/AutenticacaoApp%20(1).png",
     },
@@ -223,8 +223,8 @@ export default function PortalMoradorMobilePage() {
             Recursos que facilitam sua rotina
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
-            Uma experiencia pensada para moradores com mais organizacao,
-            comunicação e seguranca em um so lugar.
+            Uma experiência pensada para moradores com mais organizacao,
+            comunicação e segurança em um so lugar.
           </p>
         </div>
 
@@ -267,7 +267,7 @@ export default function PortalMoradorMobilePage() {
           </div>
 
           <p className="max-w-xl text-base leading-8 text-slate-300">
-            Esta e a versao voltada para o morador, reunindo recursos praticos
+            Esta e a versão voltada para o morador, reunindo recursos praticos
             para consulta, organizacao da rotina e comunicação com a
             administração.
           </p>
