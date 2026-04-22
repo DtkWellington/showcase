@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import LogoEmpresa from "../assets/logo-empresa.svg";
-
+import LogoEmpresa from "../assets/logo-portal-empresa.svg";
+import LogoMorador from "../assets/logo-portal-morador.svg";
 export default function HomePage() {
   const solutions = [
     {
@@ -10,6 +10,7 @@ export default function HomePage() {
       webLink: "/portal-morador",
       appLink: "/app_portal_morador",
       accent: "from-[#57B6FF] to-cyan-300",
+      image: LogoMorador,
     },
     {
       title: "Portal Empresa",
@@ -18,6 +19,7 @@ export default function HomePage() {
       webLink: "/portal-empresa",
       appLink: "/app_portal_empresa",
       accent: "from-[#242c48] to-[#adb9df]",
+      image: LogoEmpresa,
     },
    
   ];
@@ -26,9 +28,9 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#07111B] text-white">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 opacity-80">
-          <div className="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[#57B6FF]/15 blur-3xl" />
-          <div className="absolute right-[-100px] top-[120px] h-[280px] w-[280px] rounded-full bg-[#adb9df]/10 blur-3xl" />
-          <div className="absolute bottom-[-140px] left-1/2 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-[#242c48]/20 blur-3xl" />
+          <div className="absolute -left-[-120px] -top-[-120px] h-80 w-[320px] rounded-full bg-[#57B6FF]/15 blur-3xl" />
+          <div className="absolute -right-[-100px] top-30 h-70 w-70 rounded-full bg-[#adb9df]/10 blur-3xl" />
+          <div className="absolute -bottom-[-140px] left-1/2 h-75 w-75 -translate-x-1/2 rounded-full bg-[#242c48]/20 blur-3xl" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-24">
@@ -39,7 +41,7 @@ export default function HomePage() {
 
             <h1 className="mt-6 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-6xl">
               Showcase do{" "}
-              <span className="bg-gradient-to-r from-[#57B6FF] to-[#adb9df] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#57B6FF] to-[#adb9df] bg-clip-text text-transparent">
                 Grupo DETK
               </span>
             </h1>
@@ -57,10 +59,10 @@ export default function HomePage() {
                 className="rounded-[34px] border border-white/10 bg-white/5 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-xl"
               >
                 <div
-                  className={`mx-auto flex h-28 w-28 items-center justify-center rounded-[28px] bg-gradient-to-br ${solution.accent} p-5 shadow-[0_16px_40px_rgba(0,0,0,0.18)]`}
+                  className={`mx-auto flex h-28 w-28 items-center justify-center rounded-[28px] bg-linear-to-br ${solution.accent} p-5 shadow-[0_16px_40px_rgba(0,0,0,0.18)]`}
                 >
                   <img
-                    src={LogoEmpresa}
+                    src={solution.image}
                     alt={`Logo ${solution.title}`}
                     className="max-h-full w-auto object-contain"
                   />

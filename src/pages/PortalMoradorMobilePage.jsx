@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-empresa.svg";
 import Header from "../components/Header";
+import { Copyright } from "../components/portal/Copyright";
 
 const mobileHighlights = [
   {
     title: "Versao app exclusiva",
-    text: "O aplicativo foi desenvolvido para o morador, com foco em autonomia, praticidade e acesso rapido as informacoes da residencia.",
+    text: "O aplicativo foi desenvolvido para o morador, com foco em autonomia, praticidade e acesso rapido as informações da residência.",
   },
   {
     title: "Rotina mais simples",
     text: "Visitantes, encomendas, reservas, comunicados e outros recursos ficam reunidos em um unico ambiente no celular.",
   },
   {
-    title: "Integracao com o detk Acesso",
-    text: "O app se conecta ao ecossistema do condominio para apoiar liberacoes, acompanhamento de acessos e comunicacao com a administracao.",
+    title: "Integraçãocom o detk Acesso",
+    text: "O app se conecta ao ecossistema do condominio para apoiar liberacoes, acompanhamento de acessos e comunicacao com a administração.",
   },
 ];
 
@@ -24,14 +25,14 @@ const residentModules = [
       "Realize o agendamento de visitantes de forma simples e rapida, com liberacao automatica de acesso no momento da entrada e dupla checagem no check-in.",
   },
   {
-    title: "Historico de acesso",
+    title: "Histórico de acesso",
     description:
       "Acompanhe os registros de acesso relacionados a sua rotina com mais controle e visibilidade dentro do aplicativo.",
   },
   {
     title: "Documentos",
     description:
-      "Consulte atas, relatorios, regulamentos e outros materiais compartilhados pela administracao em um unico lugar.",
+      "Consulte atas, relatorios, regulamentos e outros materiais compartilhados pela administração em um unico lugar.",
   },
   {
     title: "Reserva de espaco",
@@ -44,9 +45,9 @@ const residentModules = [
       "Na tela inicial, o morador pode acionar rapidamente o recurso em situacoes entendidas como de extrema emergencia.",
   },
   {
-    title: "Comunicacao com a administracao",
+    title: "Comunicacao com a administração",
     description:
-      "O app aproxima o morador da administracao com informacoes oficiais, avisos relevantes e tratativas ligadas a rotina da residencia.",
+      "O app aproxima o morador da administração com informações oficiais, avisos relevantes e tratativas ligadas a rotina da residência.",
   },
 ];
 
@@ -69,7 +70,7 @@ const mobileTimeline = [
   {
     step: "04",
     title: "Ganhar autonomia",
-    text: "O aplicativo reduz dependencias operacionais e entrega mais controle para o morador sobre as demandas ligadas a residencia.",
+    text: "O aplicativo reduz dependencias operacionais e entrega mais controle para o morador sobre as demandas ligadas a residência.",
   },
 ];
 
@@ -90,7 +91,7 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Ficha de Viagem",
       description:
-        "Registre ausencia, notifique a administracao e acompanhe a tratativa com chat integrado para comunicacao direta.",
+        "Registre ausencia, notifique a administração e acompanhe a tratativa com chat integrado para comunicacao direta.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/FichaViagem.png",
     },
@@ -109,7 +110,7 @@ export default function PortalMoradorMobilePage() {
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Avisos.png",
     },
     {
-      title: "Autenticacao no App",
+      title: "Autenticação no App",
       description:
         "Mais seguranca para acessar os recursos do Portal Morador e usar o aplicativo com confiabilidade no dia a dia.",
       image:
@@ -117,30 +118,14 @@ export default function PortalMoradorMobilePage() {
     },
   ];
 
-  function Copyright(props) {
-    return (
-      <p className="text-center text-sm text-white/80" {...props}>
-        Copyright ©{" "}
-        <a
-          className="font-medium text-white hover:text-cyan-300"
-          href="https://grupodetk.com.br/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Grupo DETK
-        </a>{" "}
-        {new Date().getFullYear()}.
-      </p>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-[#07111B] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
         <div className="absolute inset-0 opacity-80">
-          <div className="absolute left-[-120px] top-[-120px] h-[320px] w-[320px] rounded-full bg-[#57B6FF]/15 blur-3xl" />
-          <div className="absolute right-[-100px] top-[120px] h-[280px] w-[280px] rounded-full bg-cyan-400/10 blur-3xl" />
-          <div className="absolute bottom-[-140px] left-1/2 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="absolute -left-30 -top-30 h-80 w-[320px] rounded-full bg-[#57B6FF]/15 blur-3xl" />
+          <div className="absolute -right-25 top-30 h-70 w-70 rounded-full bg-cyan-400/10 blur-3xl" />
+          <div className="absolute -bottom-35 left-1/2 h-75 w-75 -translate-x-1/2 rounded-full bg-sky-500/10 blur-3xl" />
         </div>
 
         <div className="relative mx-auto max-w-7xl">
@@ -161,7 +146,7 @@ export default function PortalMoradorMobilePage() {
                 <p className="max-w-xl text-lg leading-8 text-slate-300 md:text-xl">
                   O aplicativo e exclusivo para moradores e proporciona mais
                   autonomia, controle e praticidade sobre as demandas e
-                  informacoes relacionadas a residencia.
+                  informações relacionadas a residência.
                 </p>
               </div>
 
@@ -170,7 +155,7 @@ export default function PortalMoradorMobilePage() {
                   href={APKUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-2xl bg-gradient-to-r from-[#57B6FF] to-cyan-400 px-6 py-4 text-center text-base font-semibold text-[#07111B] shadow-[0_20px_60px_rgba(87,182,255,0.25)] transition hover:scale-[1.02]"
+                  className="rounded-2xl bg-linear-to-r from-[#57B6FF] to-cyan-400 px-6 py-4 text-center text-base font-semibold text-[#07111B] shadow-[0_20px_60px_rgba(87,182,255,0.25)] transition hover:scale-[1.02]"
                 >
                   Baixar na Google Play
                 </a>
@@ -196,7 +181,7 @@ export default function PortalMoradorMobilePage() {
                   <img
                     src="https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/splash.jpg"
                     alt="Tela inicial do app"
-                    className="aspect-[9/19] w-full rounded-[22px] object-cover object-top"
+                    className="aspect-9/19 w-full rounded-[22px] object-cover object-top"
                   />
                 </div>
 
@@ -204,7 +189,7 @@ export default function PortalMoradorMobilePage() {
                   <img
                     src="https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/validation.jpg"
                     alt="Tela de validacao por OTP"
-                    className="aspect-[9/19] w-full rounded-[22px] object-cover object-top"
+                    className="aspect-9/19 w-full rounded-[22px] object-cover object-top"
                   />
                 </div>
               </div>
@@ -233,7 +218,7 @@ export default function PortalMoradorMobilePage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-12 text-center">
-          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-gradient-to-r from-[#57B6FF] to-cyan-300" />
+          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-linear-to-r from-[#57B6FF] to-cyan-300" />
           <h2 className="text-3xl font-bold md:text-5xl">
             Recursos que facilitam sua rotina
           </h2>
@@ -253,7 +238,7 @@ export default function PortalMoradorMobilePage() {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="aspect-[16/10] w-full object-contain bg-[#0B1622] transition duration-300 group-hover:scale-[1.02]"
+                  className="aspect-16/10 w-full object-contain bg-[#0B1622] transition duration-300 group-hover:scale-[1.02]"
                 />
               </div>
 
@@ -284,7 +269,7 @@ export default function PortalMoradorMobilePage() {
           <p className="max-w-xl text-base leading-8 text-slate-300">
             Esta e a versao voltada para o morador, reunindo recursos praticos
             para consulta, organizacao da rotina e comunicacao com a
-            administracao.
+            administração.
           </p>
         </div>
 
@@ -318,20 +303,20 @@ export default function PortalMoradorMobilePage() {
 
           <p className="max-w-xl text-base leading-8 text-slate-300">
             O aplicativo foi estruturado para reduzir atrito e tornar a gestao
-            da residencia mais simples para quem mora no condominio.
+            da residência mais simples para quem mora no condominio.
           </p>
         </div>
 
         <div className="relative">
-          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-cyan-300/60 via-cyan-300/25 to-transparent md:block" />
+          <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-cyan-300/60 via-cyan-300/25 to-transparent md:block" />
 
           <div className="space-y-6">
             {mobileTimeline.map((item) => (
               <article
                 key={item.step}
-                className="relative grid gap-4 rounded-[32px] border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
+                className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
               >
-                <div className="absolute left-[7px] top-8 hidden h-4 w-4 rounded-full border-4 border-[#07111B] bg-cyan-300 md:block" />
+                <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#07111B] bg-cyan-300 md:block" />
 
                 <div className="inline-flex w-fit rounded-full bg-[#0B1622] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100">
                   Etapa {item.step}
@@ -351,6 +336,41 @@ export default function PortalMoradorMobilePage() {
         </div>
       </section>
 
+      <section className="px-6 pb-24 pt-12 md:px-8">
+        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#16324F_0%,#214E78_58%,#3A6E99_100%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#e1e7f8]">
+                Portal Morador Mobile
+              </p>
+              <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
+                Uma extensão mobile para manter a operação próxima de quem decide.
+              </h2>
+              <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
+                A versão app complementa o portal web com mobilidade, leitura rápida e acesso mais prático para o acompanhamento da rotina.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4 sm:flex-row">
+              <Link
+                to="/portal-morador"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] transition hover:bg-[#eef2fb]"
+              >
+                Versão web
+              </Link>
+
+              <Link
+                to="/"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-4 font-['Manrope'] text-base font-semibold text-white transition hover:bg-white/15"
+              >
+                Voltar ao showcase
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer className="border-t border-white/10 px-6 py-8">
         <Copyright />
       </footer>

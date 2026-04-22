@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo-empresa.svg";
 import Header from "../components/Header";
+import { Copyright } from "../components/portal/Copyright";
 
 const mobileHighlights = [
   {
@@ -75,9 +76,9 @@ const mobileTimeline = [
 
 export default function PortalEmpresaMobilePage() {
   const APKUrl =
-    "https://play.google.com/store.apps/details?id=com.grupodetk.appportalmorador.app_portalmorador";
+    "https://play.google.com/store/apps/details?id=com.grupodetk.appportalempresa.app_portalempresa";
   const IOSUrl =
-    "https://apps.apple.com/br/app/portal-morador/id6745190100";
+    "https://apps.apple.com/br/app/detk-portal-empresa/id6756574538";
 
   const features = [
     {
@@ -96,27 +97,11 @@ export default function PortalEmpresaMobilePage() {
     },
   ];
 
-function Copyright(props) {
-    return (
-      <p className="text-center text-sm text-white/70" {...props}>
-        Copyright ©{" "}
-        <a
-          className="font-semibold text-white transition hover:text-[#91A8F3]"
-          href="https://grupodetk.com.br/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Grupo DETK
-        </a>{" "}
-        {new Date().getFullYear()}.
-      </p>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-[#0b1020] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(173,185,223,0.2),_transparent_22%),radial-gradient(circle_at_88%_12%,_rgba(36,44,72,0.92),_transparent_24%),linear-gradient(180deg,#0b1020_0%,#12182b_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(173,185,223,0.2),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(36,44,72,0.92),transparent_24%),linear-gradient(180deg,#0b1020_0%,#12182b_100%)]" />
         <div className="absolute right-6 top-6 h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl" />
 
         <div className="relative mx-auto max-w-7xl">
@@ -167,7 +152,7 @@ function Copyright(props) {
                   <img
                     src="https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/splash.jpeg"
                     alt="Tela inicial do app Portal Empresa"
-                    className="aspect-[9/19] w-full rounded-[22px] object-cover object-top"
+                    className="aspect-9/19 w-full rounded-[22px] object-cover object-top"
                   />
                 </div>
 
@@ -175,7 +160,7 @@ function Copyright(props) {
                   <img
                     src="https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/validation.jpeg"
                     alt="Tela de validação do app Portal Empresa"
-                    className="aspect-[9/19] w-full rounded-[22px] object-cover object-top"
+                    className="aspect-9/19 w-full rounded-[22px] object-cover object-top"
                   />
                 </div>
               </div>
@@ -204,7 +189,7 @@ function Copyright(props) {
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-12 text-center">
-          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-gradient-to-r from-[#91A8F3] to-[#c5d4ff]" />
+          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-linear-to-r from-[#91A8F3] to-[#c5d4ff]" />
           <h2 className="font-['Syne'] text-3xl font-bold md:text-5xl">
             Recursos que facilitam a rotina empresarial
           </h2>
@@ -224,7 +209,7 @@ function Copyright(props) {
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="aspect-[16/10] w-full object-contain bg-[#0B1622] transition duration-300 group-hover:scale-[1.02]"
+                  className="aspect-16/10 w-full object-contain bg-[#0B1622] transition duration-300 group-hover:scale-[1.02]"
                 />
               </div>
 
@@ -293,15 +278,15 @@ function Copyright(props) {
         </div>
 
         <div className="relative">
-          <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-[#91A8F3]/60 via-[#91A8F3]/25 to-transparent md:block" />
+          <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-[#91A8F3]/60 via-[#91A8F3]/25 to-transparent md:block" />
 
           <div className="space-y-6">
             {mobileTimeline.map((item) => (
               <article
                 key={item.step}
-                className="relative grid gap-4 rounded-[32px] border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
+                className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
               >
-                <div className="absolute left-[7px] top-8 hidden h-4 w-4 rounded-full border-4 border-[#0b1020] bg-[#91A8F3] md:block" />
+                <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#0b1020] bg-[#91A8F3] md:block" />
 
                 <div className="inline-flex w-fit rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
                   Etapa {item.step}
@@ -342,7 +327,7 @@ function Copyright(props) {
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] transition hover:bg-[#eef2fb]"
               >
-                Ver versão web
+                Versão web
               </Link>
 
               <Link

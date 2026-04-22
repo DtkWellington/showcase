@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BuildingOfficeIcon } from "@heroicons/react/24/outline";
 import Header from "../components/Header";
+import { Copyright } from "../components/portal/Copyright";
 const overviewCards = [
   {
     title: "Home",
-    text: "Acesso as funcionalidades para gerenciamento e visualização das informaçõees cadastradas.",
+    text: "Acesso as funcionalidades para gerenciamento e visualizacao das informacoes cadastradas.",
   },
   {
     title: "Departamentos e setores",
@@ -16,8 +17,8 @@ const overviewCards = [
     text: "Cadastro de cargos de acordo com a rotina de cada colaborador.",
   },
   {
-    title: "Cartões",
-    text: "Cadastro e vinculação de cartões ao colaborador, com habilitação de acesso.",
+    title: "Cartoes",
+    text: "Cadastro e vinculacao de cartoes ao colaborador, com habilitacao de acesso.",
   },
 ];
 
@@ -26,10 +27,10 @@ const featureGroups = [
     id: "01",
     title: "Dashboard",
     description:
-      "Visão geral da operação com informações de agendamentos e acessos autorizados",
+      "Visao geral da operacao com informacoes de agendamentos e acessos autorizados",
     items: [
-      "Tela inicial com visão geral da operação diária",
-      "Fluxos de acessos diários e pessoas no prédio",
+      "Tela inicial com visao geral da operacao diaria",
+      "Fluxos de acessos diarios e pessoas no predio",
       "Fluxo de convites previstos para o dia",
     ],
     image:
@@ -39,24 +40,24 @@ const featureGroups = [
     id: "02",
     title: "Agendamentos",
     description:
-      "Pré-autorização de acesso por categorias, contemplando visitante simples, visitante especial, prestador de serviço e múltiplos visitantes.",
+      "Pre-autorizacao de acesso por categorias, contemplando visitante simples, visitante especial, prestador de servico e multiplos visitantes.",
     items: [
       "Agendamento anticipado de acesso para visitantes",
       "Categorias de visitantes para diferentes fluxos de acesso",
-      "Histórico de agendamentos e acessos vinculados para consulta",
+      "Historico de agendamentos e acessos vinculados para consulta",
     ],
     image:
       "https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/convites_de_acesso.png",
   },
   {
     id: "03",
-    title: "Cadastro de funcionários e estrutura da empresa",
+    title: "Cadastro de funcionarios e estrutura da empresa",
     description:
-      "Cadastro e gerenciamento das informações dos funcionários, com organização de departamentos, setores, cargos e cartões de acesso.",
+      "Cadastro e gerenciamento das informacoes dos funcionarios, com organizacao de departamentos, setores, cargos e cartoes de acesso.",
     items: [
-      "Funcionários centralizados em uma única base",
+      "Funcionarios centralizados em uma unica base",
       "Departamentos e setores conforme a rotina da empresa",
-      "Cartões e cargos vinculados ao cadastro do colaborador",
+      "Cartoes e cargos vinculados ao cadastro do colaborador",
     ],
     image:
       "https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/cadastro_de_funcionarios.png",
@@ -65,80 +66,83 @@ const featureGroups = [
 
 const supportModules = [
   {
-    title: "Reserva de espaço",
-    text: "Caso a empresa possua salas de reunião, é possível cadastrá-las para uso interno dos funcionários habilitados.",
+    title: "Reserva de espaco",
+    text: "Caso a empresa possua salas de reuniao, e possivel cadastra-las para uso interno dos funcionarios habilitados.",
   },
   {
     title: "Documentos",
-    text: "Publicação de arquivos referentes à rotina do condomínio em um ambiente único de consulta.",
+    text: "Publicacao de arquivos referentes a rotina do condominio em um ambiente unico de consulta.",
   },
   {
     title: "Mural",
-    text: "Comunicados e enquetes direcionados aos usuários da plataforma.",
+    text: "Comunicados e enquetes direcionados aos usuarios da plataforma.",
   },
   {
     title: "Acessos",
-    text: "Visualização completa dos acessos vinculados aos agendamentos previamente autorizados.",
+    text: "Visualizacao completa dos acessos vinculados aos agendamentos previamente autorizados.",
   },
   {
-    title: "Acessos funcionários",
-    text: "Visualização dos registros de acesso de todos os funcionários cadastrados na base da empresa.",
+    title: "Acessos funcionarios",
+    text: "Visualizacao dos registros de acesso de todos os funcionarios cadastrados na base da empresa.",
   },
 ];
 
 const processTimeline = [
   {
     step: "01",
-    title: "Acesso a home",
-    text: "A empresa entra no portal e visualiza rapidamente as informaçõees e funcionalidades dispon­íveis para a rotina operacional.",
+    title: "Acesso a home",
+    text: "A empresa entra no portal e visualiza rapidamente as informacoes e funcionalidades disponiveis para a rotina operacional.",
   },
   {
     step: "02",
-    title: "Organização da base",
-    text: "Funcionários, departamentos, setores, cargos e cartões são cadastrados para estruturar corretamente os perfis e acessos.",
+    title: "Organizacao da base",
+    text: "Funcionarios, departamentos, setores, cargos e cartoes sao cadastrados para estruturar corretamente os perfis e acessos.",
   },
   {
     step: "03",
-    title: "Agendamentos e autorizações",
-    text: "Visitantes e prestadores de serviço são pré-autorizados por categoria, com controle mais claro sobre cada entrada prevista.",
+    title: "Agendamentos e autorizacoes",
+    text: "Visitantes e prestadores de servico sao pre-autorizados por categoria, com controle mais claro sobre cada entrada prevista.",
   },
   {
     step: "04",
-    title: "Rotina e comunicação",
-    text: "Reservas, documentos, comunicados e enquetes ficam disponíveis em um único ambiente para uso interno e comunicação contínua.",
+    title: "Rotina e comunicacao",
+    text: "Reservas, documentos, comunicados e enquetes ficam disponiveis em um unico ambiente para uso interno e comunicacao continua.",
   },
   {
     step: "05",
     title: "Acompanhamento de acessos",
-    text: "A plataforma registra os acessos autorizados e também permite consultar os registros de entrada dos funcionários cadastrados.",
+    text: "A plataforma registra os acessos autorizados e tambem permite consultar os registros de entrada dos funcionarios cadastrados.",
   },
 ];
 
 const clientShowcase = [
   "West Corp",
   "West Towers",
-  "Evolution Corporate",
   "West Side",
-  "Edifício Alfacon",
+  "West Point",
+  "Evolution Corporate",
+  "Condominio Montreal Plaza",
+  "Edificio Alfacon",
   "Complexo Madeira",
+  "Condominio Canopus",
 ];
 const benefits = [
   {
     title: "Agilidade Operacional",
     description:
-      "Reduza o tempo de espera na recepção com pré-autorizações enviadas diretamente pelo portal.",
+      "Reduza o tempo de espera na recepcao com pre-autorizacoes enviadas diretamente pelo portal.",
     icon: "",
   },
   {
     title: "Conformidade LGPD",
     description:
-      "Gestão segura dos dados de visitantes e funcionários, seguindo as normas de proteção de dados.",
+      "Gestao segura dos dados de visitantes e funcionarios, seguindo as normas de protecao de dados.",
     icon: "",
   },
   {
-    title: "Redução de Erros",
+    title: "Reducao de Erros",
     description:
-      "Elimine falhas de comunicação entre a empresa e a administração com um canal centralizado.",
+      "Elimine falhas de comunicacao entre a empresa e a administracao com um canal centralizado.",
     icon: "",
   },
 ];
@@ -147,86 +151,71 @@ const faqItems = [
   {
     question: "Como os visitantes recebem o acesso?",
     answer:
-      "Após o agendamento no portal, o visitante recebe as instruções de acesso, que podem incluir QR Codes ou liberação via documento na portaria.",
+      "Apos o agendamento no portal, o visitante recebe as instrucoes de acesso, que podem incluir QR Codes ou liberacao via documento na portaria.",
   },
   {
-    question: "O portal funciona em dispositivos móveis?",
+    question: "O portal funciona em dispositivos moveis?",
     answer:
-      "Sim! O Portal Empresa é totalmente responsivo e também possui uma versão em aplicativo para maior comodidade.",
+      "Sim! O Portal Empresa e totalmente responsivo e tambem possui uma versao em aplicativo para maior comodidade.",
   },
   {
-    question: "É possível extrair relatórios de acesso?",
+    question: "E possivel extrair relatorios de acesso?",
     answer:
-      "Sim, os administradores podem visualizar e exportar o histórico de acessos dos funcionários e visitantes agendados.",
+      "Sim, os administradores podem visualizar e exportar o historico de acessos dos funcionarios e visitantes agendados.",
   },
 ];
-function Copyright(props) {
-  return (
-    <p className="text-center text-sm text-white/70" {...props}>
-      Copyright Â©{" "}
-      <a
-        className="font-semibold text-white transition hover:text-[#adb9df]"
-        href="https://grupodetk.com.br/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Grupo DETK
-      </a>{" "}
-      {new Date().getFullYear()}.
-    </p>
-  );
-}
 
-function DashboardPreview() {
-  return (
-    <div className="relative mx-auto w-full max-w-[580px]">
-      <div className="absolute -left-10 top-14 hidden h-32 w-32 rounded-full bg-[#242c48]/45 blur-3xl lg:block" />
-      <div className="absolute -right-8 bottom-8 h-36 w-36 rounded-full bg-[#adb9df]/30 blur-3xl" />
-      <div className="absolute top-[-200px] rounded-[36px]  p-4 ">
-        <img
-          src="../bannerempresa.svg"
-          alt="Tela de funcionÃ¡rios do Portal Empresa"
-          className="w-[80%] rounded-[16px] object-contain object-top"
-        />
+function Banner() {
+ return (
+    <div className="relative mx-auto w-full max-w-195">
+      <div className="absolute -left-8 top-10 hidden h-32 w-32 rounded-full bg-[#57B6FF]/18 blur-3xl lg:block" />
+      <div className="absolute -right-6 bottom-6 h-36 w-36 rounded-full" />
+
+      <div className="relative overflow-hidden p-3 md:p-4">
+        <div className="overflow-hidden rounded-[22px]  md:rounded-[28px]">
+          <img
+            src="../bannerempresa.svg"
+            alt="Tela de funcionarios do Portal Morador"
+            className="h-auto w-full object-cover object-top"
+          />
+        </div>
       </div>
     </div>
   );
 }
 
 export default function PortalEmpresaPage() {
-  const [fullscreenImage, setFullscreenImage] = useState(null);
-
   return (
     <div className="min-h-screen bg-[#0b1020] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(173,185,223,0.2),_transparent_22%),radial-gradient(circle_at_88%_12%,_rgba(36,44,72,0.92),_transparent_24%),linear-gradient(180deg,#0b1020_0%,#12182b_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(173,185,223,0.2),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(36,44,72,0.92),transparent_24%),linear-gradient(180deg,#0b1020_0%,#12182b_100%)]" />
         <div className="absolute right-6 top-6 h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl" />
 
         <div className="relative mx-auto max-w-7xl">
           <Header />
 
-          <div className="grid gap-16 pt-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:pt-20">
-            <div className="space-y-8">
+          <div className="grid gap-12 pt-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-14 lg:pt-16">
+            <div className="space-y-7 lg:pr-4">
               <div className="inline-flex rounded-full border border-[#adb9df]/25 bg-[#242c48]/50 px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#d8e1fb]">
                 Portal Empresa
               </div>
 
-              <div className="space-y-6">
-                <h1 className="max-w-4xl font-['Syne'] text-2xl leading-[0.92] tracking-[-0.06em] text-white md:text-7xl">
-                  Mais controle, autonomia e comunicaÃ§Ã£o.
+              <div className="space-y-5">
+                <h1 className="max-w-4xl font-['Syne'] text-[2.7rem] leading-[0.92] tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl">
+                  Mais controle, autonomia e comunicacao.
                 </h1>
 
-                <p className="max-w-2xl font-['Manrope'] text-lg leading-8 text-slate-300 md:text-xl">
-                  O Portal Empresa foi desenvolvido para concentrar informaçõs,
-                  acessos e funcionalidades em um único ambiente, facilitando a
-                  operação diária e a comunicação com a administração do
-                  condomínio.
+                <p className="max-w-xl font-['Manrope'] text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 md:text-xl">
+                  O Portal Empresa foi desenvolvido para concentrar informacoes,
+                  acessos e funcionalidades em um unico ambiente, facilitando a
+                  operacao diaria e a comunicacao com a administracao do
+                  condominio.
                 </p>
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
                 <a
-                  href="https://portalempresa.grupodetk.com.br/login"
+                  href="https://portalempresa.grupodetk.com.br"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full bg-[#adb9df] px-7 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] shadow-[0_20px_50px_rgba(173,185,223,0.28)] transition hover:-translate-y-0.5 hover:bg-[#bcc6e5]"
@@ -238,12 +227,12 @@ export default function PortalEmpresaPage() {
                   href="#modulos"
                   className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-7 py-4 font-['Manrope'] text-base font-semibold text-white transition hover:bg-white/10"
                 >
-                  Ver mÃ³dulos principais
+                  Ver modulos principais
                 </a>
               </div>
             </div>
 
-            <DashboardPreview />
+            <Banner />
           </div>
           <div></div>
         </div>
@@ -251,7 +240,7 @@ export default function PortalEmpresaPage() {
       <section className="px-6 py-10 md:px-8 md:py-14">
         <div className="mx-auto max-w-7xl overflow-hidden rounded-[42px]  px-6 py-8 md:px-8 md:py-10">
           <div className="flex overflow-hidden">
-            <div className="flex min-w-max animate-[client-marquee_22s_linear_infinite] gap-6 pr-6 cursor-pointer">
+            <div className="flex min-w-max animate-[client-marquee_22s_linear_infinite] cursor-pointer gap-6 pr-6">
               {[...clientShowcase, ...clientShowcase].map((client, index) => (
                 <article
                   key={`${client.cliente}-${index}`}
@@ -275,12 +264,12 @@ export default function PortalEmpresaPage() {
       </section>
       <section className="px-6 py-10 md:px-8 md:py-16">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <h2 className="font-['Syne'] text-3xl md:text-5xl tracking-[-0.05em] mb-4">
+          <div className="mb-12 text-center">
+            <h2 className="mb-4 font-['Syne'] text-3xl tracking-[-0.05em] md:text-5xl">
               Por que utilizar o portal?
             </h2>
-            <p className="font-['Manrope'] text-slate-400 max-w-2xl mx-auto">
-              Muito mais que um cadastro, uma ferramenta estratégica para o dia
+            <p className="mx-auto max-w-2xl font-['Manrope'] text-slate-400">
+              Muito mais que um cadastro, uma ferramenta estrategica para o dia
               a dia da sua empresa.
             </p>
           </div>
@@ -288,11 +277,11 @@ export default function PortalEmpresaPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="p-8 rounded-[32px] border border-white/10 bg-[#242c48]/30 hover:bg-[#242c48]/50 transition"
+                className="rounded-4xl border border-white/10 bg-[#242c48]/30 p-8 transition hover:bg-[#242c48]/50"
               >
-                <div className="text-4xl mb-6">{benefit.icon}</div>
-                <h3 className="font-['Syne'] text-xl mb-3">{benefit.title}</h3>
-                <p className="font-['Manrope'] text-sm text-slate-300 leading-relaxed">
+                <div className="mb-6 text-4xl">{benefit.icon}</div>
+                <h3 className="mb-3 font-['Syne'] text-xl">{benefit.title}</h3>
+                <p className="font-['Manrope'] text-sm leading-relaxed text-slate-300">
                   {benefit.description}
                 </p>
               </div>
@@ -307,12 +296,12 @@ export default function PortalEmpresaPage() {
               Finalidade
             </p>
             <h2 className="mt-4 max-w-md font-['Syne'] text-4xl leading-tight tracking-[-0.05em]">
-              Um único ambiente para aproximar empresa e administração.
+              Um unico ambiente para aproximar empresa e administracao.
             </h2>
             <p className="mt-5 max-w-lg font-['Manrope'] text-base leading-8 text-slate-300">
-              A solução tem como objetivo proporcionar maior controle e
-              autonomia sobre as informações da empresa, oferecendo recursos que
-              auxiliam a comunicação com a administração do condomínio.
+              A solucao tem como objetivo proporcionar maior controle e
+              autonomia sobre as informacoes da empresa, oferecendo recursos que
+              auxiliam a comunicacao com a administracao do condominio.
             </p>
           </div>
 
@@ -347,9 +336,9 @@ export default function PortalEmpresaPage() {
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              Da visualização inicial na home aos registros de acesso, a
-              plataforma centraliza agendamentos, colaboradores, comunicação e
-              informações operacionais em um único fluxo.
+              Da visualizacao inicial na home aos registros de acesso, a
+              plataforma centraliza agendamentos, colaboradores, comunicacao e
+              informacoes operacionais em um unico fluxo.
             </p>
           </div>
 
@@ -363,7 +352,7 @@ export default function PortalEmpresaPage() {
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="inline-flex rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
-                    Etapa {group.id}
+                    Modulo {group.id}
                   </div>
                   <h3 className="mt-5 max-w-xl font-['Syne'] text-3xl leading-tight tracking-[-0.05em] text-white md:text-4xl">
                     {group.title}
@@ -396,12 +385,12 @@ export default function PortalEmpresaPage() {
                         alt: group.title,
                       })
                     }
-                    className="block w-full cursor-zoom-in overflow-hidden rounded-[30px] bg-[#242c48] p-3 text-left shadow-[0_20px_60px_rgba(0,0,0,0.24)] transition hover:scale-[1.01]"
+                    className="block w-full overflow-hidden rounded-[30px] bg-[#242c48] p-3 text-left shadow-[0_20px_60px_rgba(0,0,0,0.24)] transition hover:scale-[1.01]"
                   >
                     <img
                       src={group.image}
                       alt={group.title}
-                      className="w-full rounded-[24px] object-cover object-top"
+                      className="w-full rounded-3xl object-cover object-top"
                     />
                   </button>
                 </div>
@@ -416,66 +405,16 @@ export default function PortalEmpresaPage() {
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
               <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
-                Processo da plataforma
-              </p>
-              <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                Como o Portal Empresa acompanha a operação do início ao controle
-                final.
-              </h2>
-            </div>
-
-            <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              A jornada foi organizada para mostrar como a plataforma centraliza
-              cadastro, autorização, comunicação e consulta de acessos em um só
-              fluxo.
-            </p>
-          </div>
-
-          <div className="relative">
-            <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-[#adb9df]/60 via-[#adb9df]/25 to-transparent md:block" />
-
-            <div className="space-y-6">
-              {processTimeline.map((item) => (
-                <article
-                  key={item.step}
-                  className="relative grid gap-4 rounded-[32px] border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
-                >
-                  <div className="absolute left-[7px] top-8 hidden h-4 w-4 rounded-full border-4 border-[#0b1020] bg-[#adb9df] md:block" />
-
-                  <div className="inline-flex w-fit rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
-                    Etapa {item.step}
-                  </div>
-
-                  <div>
-                    <h3 className="font-['Syne'] text-2xl leading-tight tracking-[-0.04em] text-white">
-                      {item.title}
-                    </h3>
-                    <p className="mt-3 max-w-3xl font-['Manrope'] text-sm leading-7 text-slate-300">
-                      {item.text}
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-6 py-10 md:px-8 md:py-14">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
                 Recursos complementares
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                Mais funcionalidades para apoiar a operação diária.
+                Mais funcionalidades para apoiar a operacao diaria.
               </h2>
             </div>
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-              O portal amplia a experiência com recursos que fortalecem
-              comunicação, reservas, documentos e consulta de históricos.
+              O portal amplia a experiencia com recursos que fortalecem
+              comunicacao, reservas, documentos e consulta de historicos.
             </p>
           </div>
 
@@ -497,6 +436,56 @@ export default function PortalEmpresaPage() {
         </div>
       </section>
 
+      <section className="px-6 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+            <div>
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
+                Processo da plataforma
+              </p>
+              <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
+                Como o Portal Empresa acompanha a operacao do inicio ao controle
+                final.
+              </h2>
+            </div>
+
+            <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
+              A jornada foi organizada para mostrar como a plataforma centraliza
+              cadastro, autorizacao, comunicacao e consulta de acessos em um so
+              fluxo.
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-[#adb9df]/60 via-[#adb9df]/25 to-transparent md:block" />
+
+            <div className="space-y-6">
+              {processTimeline.map((item) => (
+                <article
+                  key={item.step}
+                  className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
+                >
+                  <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#0b1020] bg-[#adb9df] md:block" />
+
+                  <div className="inline-flex w-fit rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
+                    Etapa {item.step}
+                  </div>
+
+                  <div>
+                    <h3 className="font-['Syne'] text-2xl leading-tight tracking-[-0.04em] text-white">
+                      {item.title}
+                    </h3>
+                    <p className="mt-3 max-w-3xl font-['Manrope'] text-sm leading-7 text-slate-300">
+                      {item.text}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 pb-24 pt-12 md:px-8">
         <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#242c48_0%,#313b60_55%,#adb9df_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
@@ -505,13 +494,13 @@ export default function PortalEmpresaPage() {
                 Portal Empresa
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
-                Uma plataforma completa para conectar empresa e administração
-                com mais eficiência.
+                Uma plataforma completa para conectar empresa e administracao
+                com mais eficiencia.
               </h2>
               <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
-                Reúna gestão de visitantes, cadastro de colaboradores,
-                departamentos, cargos, cartões, reservas, documentos, mural e
-                histórico de acessos em uma experiência única.
+                Reuna gestao de visitantes, cadastro de colaboradores,
+                departamentos, cargos, cartoes, reservas, documentos, mural e
+                historico de acessos em uma experiencia unica.
               </p>
             </div>
 
@@ -521,7 +510,7 @@ export default function PortalEmpresaPage() {
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#07111B] transition hover:bg-[#eef7ff]"
               >
-                Ver versao app
+                Versao app
               </Link>
 
               <Link
@@ -539,27 +528,6 @@ export default function PortalEmpresaPage() {
       <footer className="border-t border-white/10 px-6 py-8 md:px-8">
         <Copyright />
       </footer>
-
-      {fullscreenImage ? (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#0b1020]/92 px-6 py-10 backdrop-blur-sm">
-          <button
-            type="button"
-            aria-label="Fechar imagem"
-            onClick={() => setFullscreenImage(null)}
-            className="absolute right-6 top-6 rounded-full border border-white/15 bg-white/10 px-4 py-2 font-['Manrope'] text-sm font-semibold text-white transition hover:bg-white/15"
-          >
-            Fechar
-          </button>
-
-          <div className="w-full max-w-6xl overflow-hidden rounded-[32px] border border-white/10 bg-[#242c48] p-4 shadow-[0_30px_100px_rgba(0,0,0,0.35)]">
-            <img
-              src={fullscreenImage.src}
-              alt={fullscreenImage.alt}
-              className="max-h-[85vh] w-full rounded-[24px] object-contain"
-            />
-          </div>
-        </div>
-      ) : null}
 
       <style>{`
         @keyframes client-marquee {

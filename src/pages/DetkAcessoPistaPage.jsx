@@ -5,7 +5,7 @@ const features = [
   {
     title: "Controle de Entrada",
     description:
-      "Gestao automatizada de entrada e saida de veiculos com leitura de placas.",
+      "gestãoautomatizada de entrada e saida de veiculos com leitura de placas.",
     image:
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/acesso-pista/entrada.png",
   },
@@ -24,7 +24,7 @@ const features = [
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/acesso-pista/relatorios.png",
   },
   {
-    title: "Integracao com Catracas",
+    title: "Integraçãocom Catracas",
     description:
       "Comunicacao com sistemas de catraca e cancelas para controle total.",
     image:
