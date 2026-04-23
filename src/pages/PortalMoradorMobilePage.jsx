@@ -10,11 +10,11 @@ const mobileHighlights = [
   },
   {
     title: "Rotina mais simples",
-    text: "Visitantes, encomendas, reservas, comunicados e outros recursos ficam reunidos em um unico ambiente no celular.",
+    text: "Visitantes, encomendas, reservas, comunicados e outros recursos ficam reunidos em um único ambiente no celular.",
   },
   {
     title: "Integração com o detk Acesso",
-    text: "O app se conecta ao ecossistema do condominio para apoiar liberacoes, acompanhamento de acessos e comunicação com a administração.",
+    text: "O app se conecta ao ecossistema do condomínio para apoiar liberacoes, acompanhamento de acessos e comunicação com a administração.",
   },
 ];
 
@@ -32,12 +32,12 @@ const residentModules = [
   {
     title: "Documentos",
     description:
-      "Consulte atas, relatorios, regulamentos e outros materiais compartilhados pela administração em um unico lugar.",
+      "Consulte atas, relatorios, regulamentos e outros materiais compartilhados pela administração em um único lugar.",
   },
   {
     title: "Reserva de espaco",
     description:
-      "Visualize disponibilidade, faca agendamentos e garanta o uso organizado das areas compartilhadas do condominio.",
+      "Visualize disponibilidade, faca agendamentos e garanta o uso organizado das areas compartilhadas do condomínio.",
   },
   {
     title: "Botao de pânico(SOS)",
@@ -60,7 +60,7 @@ const mobileTimeline = [
   {
     step: "02",
     title: "Consultar informações",
-    text: "Avisos, documentos, acessos, reservas e outros dados importantes ficam disponiveis em um unico lugar.",
+    text: "Avisos, documentos, acessos, reservas e outros dados importantes ficam disponiveis em um único lugar.",
   },
   {
     step: "03",
@@ -84,7 +84,7 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Reservas",
       description:
-        "Consulte a disponibilidade dos espacos e reserve datas e horarios com mais autonomia, seguindo as regras do condominio.",
+        "Consulte a disponibilidade dos espacos e reserve datas e horarios com mais autonomia, seguindo as regras do condomínio.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Reservas2.png",
     },
@@ -105,7 +105,7 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Avisos",
       description:
-        "Tenha acesso ao mural de avisos do condominio em um canal oficial e sempre atualizado.",
+        "Tenha acesso ao mural de avisos do condomínio em um canal oficial e sempre atualizado.",
       image:
         "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Avisos.png",
     },
@@ -302,8 +302,8 @@ export default function PortalMoradorMobilePage() {
           </div>
 
           <p className="max-w-xl text-base leading-8 text-slate-300">
-            O aplicativo foi estruturado para reduzir atrito e tornar a gestao
-            da residência mais simples para quem mora no condominio.
+            O aplicativo foi estruturado para reduzir atrito e tornar a Gestão
+            da residência mais simples para quem mora no condomínio.
           </p>
         </div>
 

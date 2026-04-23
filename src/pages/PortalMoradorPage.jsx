@@ -10,13 +10,13 @@ const benefits = [
   {
     title: "Agilidade Operacional",
     description:
-      "Reduza o tempo de espera na recepcao com pre-autorizações enviadas diretamente pelo portal.",
+      "Reduza o tempo de espera na recepção com pre-autorizações enviadas diretamente pelo portal.",
     icon: "",
   },
   {
     title: "Conformidade LGPD",
     description:
-      "Gestao segura dos dados de visitantes e funcionarios, seguindo as normas de proteção de dados.",
+      "Gestão segura dos dados de visitantes e funcionários, seguindo as normas de proteção de dados.",
     icon: "",
   },
   {
@@ -31,7 +31,7 @@ const adminModules = [
     id: "01",
     title: "Convites de acesso",
     description:
-      "Acesso mais simples e seguro para visitantes, prestadores de servico",
+      "Acesso mais simples e seguro para visitantes, prestadores de serviço",
     items: [
       "Mais praticidade para administração",
       "informações claras para os moradores",
@@ -59,7 +59,7 @@ const adminModules = [
     items: [
       "Autenticação segura",
       "Controle de acesso para a administração",
-      "informações em tempo real sobre a movimentacao do condominio",
+      "informações em tempo real sobre a movimentacao do condomínio",
     ],
     image:
       "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/AutenticacaoApp%20(1).png",
@@ -68,7 +68,7 @@ const adminModules = [
 
 const adminFeatures = [
   "Mural de avisos e comunicados",
-  "Agendamento de visitas e prestadores de servico",
+  "Agendamento de visitas e prestadores de serviço",
   "Historico de Acesso",
   "Reservas de espacos",
   "Ficha de Viagem",
@@ -79,7 +79,7 @@ const adminTimeline = [
   {
     step: "01",
     title: "Centralizar a informacao",
-    text: "A administração organiza comunicados, documentos e materiais importantes em um ambiente unico.",
+    text: "A administração organiza comunicados, documentos e materiais importantes em um ambiente único.",
   },
   {
     step: "02",
@@ -89,7 +89,7 @@ const adminTimeline = [
   {
     step: "03",
     title: "Ganhar eficiencia",
-    text: "Com o portal integrado ao detk Acesso, a rotina do condominio fica mais simples, organizada e rastreavel.",
+    text: "Com o portal integrado ao detk Acesso, a rotina do condomínio fica mais simples, organizada e rastreavel.",
   },
 ];
 
@@ -111,7 +111,7 @@ function Banner() {
         <div className="overflow-hidden rounded-[22px]  md:rounded-[28px]">
           <img
             src="../bannermorador.svg"
-            alt="Tela de funcionarios do Portal Morador"
+            alt="Tela de funcionários do Portal Morador"
             className="h-auto w-full object-cover object-top"
           />
         </div>
@@ -142,7 +142,7 @@ export default function PortalMoradorPage() {
                 </h1>
 
                 <p className="max-w-xl font-['Manrope'] text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 md:text-xl">
-                  A versâo web e exclusiva para a administração do condominio e
+                  A versâo web e exclusiva para a administração do condomínio e
                   foi desenvolvida para organizar a rotina, centralizar
                   comunicacoes e dar mais controle sobre as informações ligadas
                   aos moradores e as residências.
@@ -162,7 +162,7 @@ export default function PortalMoradorPage() {
                   href="#etapas"
                   className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-7 py-4 font-['Manrope'] text-base font-semibold text-white transition hover:bg-white/10"
                 >
-                  Ver modulos principais
+                  Ver Módulos principais
                 </a>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function PortalMoradorPage() {
               Por que utilizar o portal?
             </h2>
             <p className="mx-auto max-w-2xl font-['Manrope'] text-slate-400">
-              Muito mais que um cadastro, uma ferramenta estrategica para o dia
+              Muito mais que um cadastro, uma ferramenta estratégica para o dia
               a dia da sua empresa.
             </p>
           </div>
@@ -238,7 +238,7 @@ export default function PortalMoradorPage() {
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
               A versâo web concentra o que a administração precisa para
-              comunicar, organizar e acompanhar a operação do condominio.
+              comunicar, organizar e acompanhar a operação do condomínio.
             </p>
           </div>
 
@@ -252,7 +252,7 @@ export default function PortalMoradorPage() {
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
                   <div className="inline-flex rounded-full bg-[#0C1D2C] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#BFE3FC]">
-                    Modulo {group.id}
+                    Módulo {group.id}
                   </div>
                   <h3 className="mt-5 max-w-xl font-['Syne'] text-3xl leading-tight tracking-[-0.05em] text-white md:text-4xl">
                     {group.title}
@@ -299,7 +299,7 @@ export default function PortalMoradorPage() {
                 Recursos complementares
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
-                Funcionalidades que fortalecem a gestao do condominio.
+                Funcionalidades que fortalecem a Gestão do condomínio.
               </h2>
             </div>
 
@@ -338,7 +338,7 @@ export default function PortalMoradorPage() {
 
             <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
               A experiência web foi organizada para transformar a rotina do
-              condominio em um fluxo mais simples e confiavel.
+              condomínio em um fluxo mais simples e confiavel.
             </p>
           </div>
 
@@ -384,7 +384,7 @@ export default function PortalMoradorPage() {
                 morador.
               </h2>
               <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
-                Essa separacao deixa a operação mais clara para o condominio:
+                Essa separacao deixa a operação mais clara para o condomínio:
                 administração com mais controle no desktop e moradores com mais
                 autonomia no celular.
               </p>

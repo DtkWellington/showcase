@@ -10,7 +10,7 @@ const mobileHighlights = [
   },
   {
     title: "Leitura imediata",
-    text: "As telas priorizam visualização objetiva, acesso recorrente e acompanhamento contínuo da rotina pelo celular.",
+    text: "As telas priorizam visualização objetiva, acesso recorrente e acompanhamento contínuo da rotina.",
   },
   {
     title: "Extensão do portal web",
@@ -47,7 +47,7 @@ const residentModules = [
   {
     title: "Extensão prática",
     description:
-      "Experiência web complementada com praticidade para uso fora da mesa de trabalho.",
+      "O melhor da experiência web, combinado com a praticidade de acessar de qualquer lugar, a qualquer momento.",
   },
 ];
 
@@ -86,7 +86,7 @@ export default function PortalEmpresaMobilePage() {
       description:
         "Fluxo de acesso preparado para uso frequente com validação simples e leitura rápida da interface.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app%20_convites_de_acesso.png",
+        "https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/ConvitesdeAcesso.png",
     },
     {
       title: "Acompanhamento",
@@ -119,7 +119,7 @@ export default function PortalEmpresaMobilePage() {
                  
                 </h1>
                 <p className="max-w-2xl font-['Manrope'] text-lg leading-8 text-slate-300 md:text-xl">
-                  A versão mobile leva a experiência do portal para o celular com uma interface mais direta, preparada para consulta rápida, validação e acompanhamento da rotina em movimento.
+                  A versão mobile leva a experiência do portal para palma da sua mão com uma interface mais direta, preparada para consulta rápida, validação e acompanhamento da rotina em movimento.
                 </p>
               </div>
 
@@ -272,8 +272,8 @@ export default function PortalEmpresaMobilePage() {
           </div>
 
           <p className="max-w-xl font-['Manrope'] text-base leading-8 text-slate-300">
-            O aplicativo foi estruturado para reduzir atrito e tornar o acompanhamento
-            das operações mais simples para quem trabalha fora do desktop.
+            O aplicativo foi estruturado para tornar o acompanhamento
+            das operações mais simples.
           </p>
         </div>
 
@@ -317,7 +317,7 @@ export default function PortalEmpresaMobilePage() {
                 Uma extensão mobile para manter a operação próxima de quem decide.
               </h2>
               <p className="mt-5 font-['Manrope'] text-base leading-8 text-slate-200">
-                A versão app complementa o portal web com mobilidade, leitura rápida e acesso mais prático para o acompanhamento da rotina.
+                A versão app complementa o portal web com mobilidade, leitura rápida e acesso mais prático.
               </p>
             </div>
 
