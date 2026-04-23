@@ -10,7 +10,7 @@ export default function HomePage() {
         "Experiência para moradores com reservas, encomendas, avisos e autenticação em um único ambiente.",
       webLink: "/portal-morador",
       appLink: "/app_portal_morador",
-      accent: "from-[#57B6FF] to-cyan-300",
+      accent: "#53AEF4",
       image: LogoMorador,
     },
     {
@@ -19,7 +19,7 @@ export default function HomePage() {
         "Plataforma para gestão corporativa com versão web e versão mobile organizadas em páginas separadas.",
       webLink: "/portal-empresa",
       appLink: "/app_portal_empresa",
-      accent: "from-[#242c48] to-[#adb9df]",
+      accent: "#91A8F3",
       image: LogoEmpresa,
     },
    
@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-7xl px-6 md:px-8 ">
           <div className="mx-auto max-w-3xl text-center">
             <div className="inline-flex items-center">
-              <a href="https://www.grupodetk.com.br/">
+              <a href="https://www.grupodetk.com.br/" target="_blank">
                 <img src={GrupoDetk} alt="Logo Grupo DETK" className="h-60 w-60" />
               </a>           
             </div>
@@ -81,13 +81,13 @@ export default function HomePage() {
                     <>
                       <Link
                       to={solution.webLink}
-                      className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 font-['Manrope'] text-sm font-semibold text-[#07111B] transition hover:bg-[#E8EDF8]"
+                      className={`inline-flex items-center justify-center rounded-full bg-[${solution.accent}] px-5 py-3 font-['Manrope'] text-sm font-semibold text-[#07111B] transition`}
                     >
                       Versão web
                     </Link>
                      <Link
                     to={solution.appLink}
-                    className="inline-flex items-center justify-center w-full rounded-full border border-white/15 bg-[#242c48] px-5 py-3 font-['Manrope'] text-sm font-semibold text-[#d8e1fb] transition hover:bg-[#313b60]"
+                      className="inline-flex items-center justify-center w-full rounded-full border border-white/15 bg-[#242c48] px-5 py-3 font-['Manrope'] text-sm font-semibold text-[#d8e1fb] transition hover:bg-[#313b60]"
                   >
                     Versão mobile
                   </Link>
