@@ -168,7 +168,7 @@ const faqItems = [
 function Banner() {
  return (
     <div className="relative mx-auto w-full max-w-195">
-      <div className="absolute -left-8 top-10 hidden h-32 w-32 rounded-full bg-[#57B6FF]/18 blur-3xl lg:block" />
+      <div className="absolute -left-8 top-10 hidden h-32 w-32 rounded-full bg-[#91A8F3]/18 blur-3xl lg:block" />
       <div className="absolute -right-6 bottom-6 h-36 w-36 rounded-full" />
 
       <div className="relative overflow-hidden p-3 md:p-4">
@@ -186,9 +186,9 @@ function Banner() {
 
 export default function PortalEmpresaPage() {
   return (
-    <div className="min-h-screen bg-[#0b1020] text-white">
+    <div className="min-h-screen bg-[#122053] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(173,185,223,0.2),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(36,44,72,0.92),transparent_24%),linear-gradient(180deg,#0b1020_0%,#12182b_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(145,168,243,0.2),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(18,32,83,0.92),transparent_24%),linear-gradient(180deg,#122053_0%,#0E1942_100%)]" />
         <div className="absolute right-6 top-6 h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl" />
 
         <div className="relative mx-auto max-w-7xl">
@@ -196,7 +196,7 @@ export default function PortalEmpresaPage() {
 
           <div className="grid gap-12 pt-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-14 lg:pt-16">
             <div className="space-y-7 lg:pr-4">
-              <div className="inline-flex rounded-full border border-[#adb9df]/25 bg-[#242c48]/50 px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#d8e1fb]">
+              <div className="inline-flex rounded-full border border-[#91A8F3]/25 bg-[#122053]/50 px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#D7E0FC]">
                 Portal Empresa
               </div>
 
@@ -218,7 +218,7 @@ export default function PortalEmpresaPage() {
                   href="https://portalempresa.grupodetk.com.br"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-[#adb9df] px-7 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] shadow-[0_20px_50px_rgba(173,185,223,0.28)] transition hover:-translate-y-0.5 hover:bg-[#bcc6e5]"
+                  className="inline-flex items-center justify-center rounded-full bg-[#91A8F3] px-7 py-4 font-['Manrope'] text-base font-semibold text-[#122053] shadow-[0_20px_50px_rgba(145,168,243,0.28)] transition hover:-translate-y-0.5 hover:bg-[#A1B6F5]"
                 >
                   Acessar plataforma
                 </a>
@@ -244,7 +244,7 @@ export default function PortalEmpresaPage() {
               {[...clientShowcase, ...clientShowcase].map((client, index) => (
                 <article
                   key={`${client.cliente}-${index}`}
-                  className="flex h-28 w-[320px] shrink-0 items-center gap-4 rounded-[28px] border border-white/10 bg-[linear-gradient(135deg,rgba(36,44,72,0.95),rgba(173,185,223,0.18))] px-5 text-left shadow-[0_16px_40px_rgba(0,0,0,0.18)]"
+                  className="flex h-28 w-[320px] shrink-0 items-center gap-4 rounded-[28px] border border-white/10 bg-[linear-gradient(135deg,rgba(18,32,83,0.95),rgba(145,168,243,0.18))] px-5 text-left shadow-[0_16px_40px_rgba(0,0,0,0.18)]"
                 >
                   <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full p-2 shadow-[inset_0_0_0_1px_rgba(11,16,32,0.06)]">
                     <span>
@@ -277,7 +277,7 @@ export default function PortalEmpresaPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-4xl border border-white/10 bg-[#242c48]/30 p-8 transition hover:bg-[#242c48]/50"
+                className="rounded-4xl border border-white/10 bg-[#122053]/45 p-8 transition hover:bg-[#122053]/65"
               >
                 <div className="mb-6 text-4xl">{benefit.icon}</div>
                 <h3 className="mb-3 font-['Syne'] text-xl">{benefit.title}</h3>
@@ -291,8 +291,8 @@ export default function PortalEmpresaPage() {
       </section>
       <section className="px-6 py-10 md:px-8 md:py-14">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="rounded-[38px] bg-[#242c48] p-8 text-white shadow-[0_24px_80px_rgba(0,0,0,0.24)] md:p-10">
-            <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
+          <div className="rounded-[38px] bg-[#122053] p-8 text-white shadow-[0_24px_80px_rgba(0,0,0,0.24)] md:p-10">
+            <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#91A8F3]">
               Finalidade
             </p>
             <h2 className="mt-4 max-w-md font-['Syne'] text-4xl leading-tight tracking-[-0.05em]">
@@ -327,7 +327,7 @@ export default function PortalEmpresaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#91A8F3]">
                 Funcionalidades em destaque
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
@@ -351,7 +351,7 @@ export default function PortalEmpresaPage() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="inline-flex rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
+                  <div className="inline-flex rounded-full bg-[#122053] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#D7E0FC]">
                     Modulo {group.id}
                   </div>
                   <h3 className="mt-5 max-w-xl font-['Syne'] text-3xl leading-tight tracking-[-0.05em] text-white md:text-4xl">
@@ -367,7 +367,7 @@ export default function PortalEmpresaPage() {
                         key={item}
                         className="flex items-start gap-3 rounded-[22px] bg-white/5 px-4 py-4"
                       >
-                        <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#adb9df]" />
+                        <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#91A8F3]" />
                         <p className="font-['Manrope'] text-sm leading-6 text-slate-200">
                           {item}
                         </p>
@@ -385,7 +385,7 @@ export default function PortalEmpresaPage() {
                         alt: group.title,
                       })
                     }
-                    className="block w-full overflow-hidden rounded-[30px] bg-[#242c48] p-3 text-left shadow-[0_20px_60px_rgba(0,0,0,0.24)] transition hover:scale-[1.01]"
+                    className="block w-full overflow-hidden rounded-[30px] bg-[#122053] p-3 text-left shadow-[0_20px_60px_rgba(0,0,0,0.24)] transition hover:scale-[1.01]"
                   >
                     <img
                       src={group.image}
@@ -404,7 +404,7 @@ export default function PortalEmpresaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#91A8F3]">
                 Recursos complementares
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
@@ -440,7 +440,7 @@ export default function PortalEmpresaPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#adb9df]">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#91A8F3]">
                 Processo da plataforma
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
@@ -457,7 +457,7 @@ export default function PortalEmpresaPage() {
           </div>
 
           <div className="relative">
-            <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-[#adb9df]/60 via-[#adb9df]/25 to-transparent md:block" />
+            <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-[#91A8F3]/60 via-[#91A8F3]/25 to-transparent md:block" />
 
             <div className="space-y-6">
               {processTimeline.map((item) => (
@@ -465,9 +465,9 @@ export default function PortalEmpresaPage() {
                   key={item.step}
                   className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
                 >
-                  <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#0b1020] bg-[#adb9df] md:block" />
+                  <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#122053] bg-[#91A8F3] md:block" />
 
-                  <div className="inline-flex w-fit rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
+                  <div className="inline-flex w-fit rounded-full bg-[#122053] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#D7E0FC]">
                     Etapa {item.step}
                   </div>
 
@@ -487,10 +487,10 @@ export default function PortalEmpresaPage() {
       </section>
 
       <section className="px-6 pb-24 pt-12 md:px-8">
-        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#242c48_0%,#313b60_55%,#adb9df_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
+        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#0E1942_0%,#122053_55%,#91A8F3_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#e1e7f8]">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#E3EAFD]">
                 Portal Empresa
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
@@ -508,7 +508,7 @@ export default function PortalEmpresaPage() {
               <Link
                 to="/app_portal_empresa"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#07111B] transition hover:bg-[#eef7ff]"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#122053] transition hover:bg-[#EEF2FE]"
               >
                 Versão app
               </Link>

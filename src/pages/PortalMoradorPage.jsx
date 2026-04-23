@@ -54,15 +54,15 @@ const adminModules = [
   },
   {
     id: "03",
-    title: "segurança e controle de acesso",
+    title: "Segurança e controle de acesso",
     description: "Mais segurança e confiabilidade no dia a dia.",
     items: [
-      "Autenticacao segura",
+      "Autenticação segura",
       "Controle de acesso para a administração",
       "informações em tempo real sobre a movimentacao do condominio",
     ],
     image:
-      "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app_visualização .png",
+      "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/AutenticacaoApp%20(1).png",
   },
 ];
 
@@ -104,7 +104,7 @@ const clientShowcase = [
 function Banner() {
   return (
     <div className="relative mx-auto w-full max-w-195">
-      <div className="absolute -left-8 top-10 hidden h-32 w-32 rounded-full bg-[#57B6FF]/18 blur-3xl lg:block" />
+      <div className="absolute -left-8 top-10 hidden h-32 w-32 rounded-full bg-[#53AEF4]/18 blur-3xl lg:block" />
       <div className="absolute -right-6 bottom-6 h-36 w-36 rounded-full" />
 
       <div className="relative overflow-hidden p-3 md:p-4">
@@ -122,9 +122,9 @@ function Banner() {
 
 export default function PortalMoradorPage() {
   return (
-    <div className="min-h-screen bg-[#07111B] text-white">
+    <div className="min-h-screen bg-[#0F2537] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(87,182,255,0.16),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(10,24,38,0.92),transparent_26%),linear-gradient(180deg,#07111B_0%,#0B1622_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(83,174,244,0.16),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(15,37,55,0.92),transparent_26%),linear-gradient(180deg,#0F2537_0%,#0C1D2C_100%)]" />
         <div className="absolute right-6 top-6 h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl" />
 
         <div className="relative mx-auto max-w-7xl">
@@ -132,7 +132,7 @@ export default function PortalMoradorPage() {
 
           <div className="grid gap-12 pt-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center lg:gap-14 lg:pt-16">
             <div className="space-y-7 lg:pr-4">
-              <div className="inline-flex rounded-full border border-cyan-300/25 bg-cyan-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-cyan-100">
+              <div className="inline-flex rounded-full border border-[#53AEF4]/25 bg-[#53AEF4]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#BFE3FC]">
                 Portal Morador
               </div>
 
@@ -153,7 +153,7 @@ export default function PortalMoradorPage() {
                   href="https://portalmorador.grupodetk.com.br"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#57B6FF] to-cyan-400 px-7 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] shadow-[0_20px_50px_rgba(173,185,223,0.28)] transition hover:-translate-y-0.5 hover:brightness-105"
+                  className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-[#53AEF4] to-[#7EC4F7] px-7 py-4 font-['Manrope'] text-base font-semibold text-[#0F2537] shadow-[0_20px_50px_rgba(83,174,244,0.28)] transition hover:-translate-y-0.5 hover:brightness-105"
                 >
                   Acessar plataforma
                 </a>
@@ -178,7 +178,7 @@ export default function PortalMoradorPage() {
               {[...clientShowcase, ...clientShowcase].map((client, index) => (
                 <article
                   key={`${client.cliente}-${index}`}
-                  className="flex h-28 w-[320px] shrink-0 items-center gap-4 rounded-[28px] border border-white/10 bg-[linear-gradient(135deg,rgba(36,44,72,0.95),rgba(173,185,223,0.18))] px-5 text-left shadow-[0_16px_40px_rgba(0,0,0,0.18)]"
+                  className="flex h-28 w-[320px] shrink-0 items-center gap-4 rounded-[28px] border border-white/10 bg-[linear-gradient(135deg,rgba(15,37,55,0.95),rgba(83,174,244,0.18))] px-5 text-left shadow-[0_16px_40px_rgba(0,0,0,0.18)]"
                 >
                   <div className="flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-full p-2 shadow-[inset_0_0_0_1px_rgba(11,16,32,0.06)]">
                     <span>
@@ -211,7 +211,7 @@ export default function PortalMoradorPage() {
             {benefits.map((benefit) => (
               <div
                 key={benefit.title}
-                className="rounded-4xl border border-white/10 bg-[#242c48]/30 p-8 transition hover:bg-[#242c48]/50"
+                className="rounded-4xl border border-white/10 bg-[#0F2537]/55 p-8 transition hover:bg-[#0F2537]/75"
               >
                 <div className="mb-6 text-4xl">{benefit.icon}</div>
                 <h3 className="mb-3 font-['Syne'] text-xl">{benefit.title}</h3>
@@ -228,7 +228,7 @@ export default function PortalMoradorPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200/80">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#9ED5FA]/80">
                 Funcionalidades em destaque
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
@@ -251,7 +251,7 @@ export default function PortalMoradorPage() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                  <div className="inline-flex rounded-full bg-[#0B1622] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100">
+                  <div className="inline-flex rounded-full bg-[#0C1D2C] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#BFE3FC]">
                     Modulo {group.id}
                   </div>
                   <h3 className="mt-5 max-w-xl font-['Syne'] text-3xl leading-tight tracking-[-0.05em] text-white md:text-4xl">
@@ -267,7 +267,7 @@ export default function PortalMoradorPage() {
                         key={item}
                         className="flex items-start gap-3 rounded-[22px] bg-white/5 px-4 py-4"
                       >
-                        <span className="mt-1 h-2.5 w-2.5 rounded-full bg-cyan-300" />
+                        <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#53AEF4]" />
                         <p className="font-['Manrope'] text-sm leading-6 text-slate-200">
                           {item}
                         </p>
@@ -277,7 +277,7 @@ export default function PortalMoradorPage() {
                 </div>
 
                 <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className="overflow-hidden rounded-[30px] bg-[#0B1622] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.24)]">
+                  <div className="overflow-hidden rounded-[30px] bg-[#0C1D2C] p-3 shadow-[0_20px_60px_rgba(0,0,0,0.24)]">
                     <img
                       src={group.image}
                       alt={group.title}
@@ -295,7 +295,7 @@ export default function PortalMoradorPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200/80">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#9ED5FA]/80">
                 Recursos complementares
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
@@ -328,7 +328,7 @@ export default function PortalMoradorPage() {
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200/80">
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#9ED5FA]/80">
                 Jornada web
               </p>
               <h2 className="mt-4 max-w-3xl font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-5xl">
@@ -343,7 +343,7 @@ export default function PortalMoradorPage() {
           </div>
 
           <div className="relative">
-            <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-cyan-300/60 via-cyan-300/25 to-transparent md:block" />
+            <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-[#53AEF4]/60 via-[#53AEF4]/25 to-transparent md:block" />
 
             <div className="space-y-6">
               {adminTimeline.map((item) => (
@@ -351,9 +351,9 @@ export default function PortalMoradorPage() {
                   key={item.step}
                   className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
                 >
-                  <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#07111B] bg-cyan-300 md:block" />
+                  <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#0F2537] bg-[#53AEF4] md:block" />
 
-                  <div className="inline-flex w-fit rounded-full bg-[#0B1622] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100">
+                  <div className="inline-flex w-fit rounded-full bg-[#0C1D2C] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#BFE3FC]">
                     Etapa {item.step}
                   </div>
 
@@ -373,10 +373,10 @@ export default function PortalMoradorPage() {
       </section>
 
       <section className="px-6 pb-24 pt-12 md:px-8">
-        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#0B1622_0%,#12314B_55%,#57B6FF_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
+        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#0C1D2C_0%,#0F2537_55%,#53AEF4_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-100">
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D4EEFE]">
                 Portal Morador Web
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
@@ -394,7 +394,7 @@ export default function PortalMoradorPage() {
               <Link
                 to="/app_portal_morador"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#07111B] transition hover:bg-[#eef7ff]"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 text-base font-semibold text-[#0F2537] transition hover:bg-[#DFF1FE]"
               >
                 Versâo app
               </Link>

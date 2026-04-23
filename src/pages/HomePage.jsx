@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import LogoEmpresa from "../assets/logo-portal-empresa.svg";
 import LogoMorador from "../assets/logo-portal-morador.svg";
+import GrupoDetk from "../assets/grupodetk-logo-branco.svg";
 export default function HomePage() {
   const solutions = [
     {
@@ -33,17 +34,16 @@ export default function HomePage() {
           <div className="absolute -bottom-[-140px] left-1/2 h-75 w-75 -translate-x-1/2 rounded-full bg-[#242c48]/20 blur-3xl" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-6 py-20 md:px-8 md:py-24">
+        <div className="relative mx-auto max-w-7xl px-6 md:px-8 ">
           <div className="mx-auto max-w-3xl text-center">
-            <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 backdrop-blur-md">
-              showcase.grupodetk.com.br
+            <div className="inline-flex items-center">
+              <a href="https://www.grupodetk.com.br/">
+                <img src={GrupoDetk} alt="Logo Grupo DETK" className="h-60 w-60" />
+              </a>           
             </div>
 
             <h1 className="mt-6 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] text-white md:text-6xl">
-              Showcase do{" "}
-              <span className="bg-linear-to-r from-[#57B6FF] to-[#adb9df] bg-clip-text text-transparent">
-                Grupo DETK
-              </span>
+              Showcase do Grupo DETK
             </h1>
 
             <p className="mx-auto mt-5 max-w-2xl font-['Manrope'] text-lg leading-8 text-slate-300 md:text-xl">
@@ -59,7 +59,7 @@ export default function HomePage() {
                 className="rounded-[34px] border border-white/10 bg-white/5 p-8 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-xl"
               >
                 <div
-                  className={`mx-auto flex h-28 w-28 items-center justify-center rounded-[28px] bg-linear-to-br ${solution.accent} p-5 shadow-[0_16px_40px_rgba(0,0,0,0.18)]`}
+                  className={`mx-auto flex h-28 w-28 items-center justify-center rounded-[28px]`}
                 >
                   <img
                     src={solution.image}

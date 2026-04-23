@@ -93,15 +93,15 @@ export default function PortalEmpresaMobilePage() {
       description:
         "Extensão prática da experiência web para uso fora da mesa de trabalho.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/app_visualizacao.png",
+        "https://sogsfxjgqyubcbcscsob.supabase.co/storage/v1/object/public/photos/app_visualizacao.png",
     },
   ];
 
 
   return (
-    <div className="min-h-screen bg-[#0b1020] text-white">
+    <div className="min-h-screen bg-[#122053] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(173,185,223,0.2),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(36,44,72,0.92),transparent_24%),linear-gradient(180deg,#0b1020_0%,#12182b_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(145,168,243,0.2),transparent_22%),radial-gradient(circle_at_88%_12%,rgba(18,32,83,0.92),transparent_24%),linear-gradient(180deg,#122053_0%,#0E1942_100%)]" />
         <div className="absolute right-6 top-6 h-28 w-28 rounded-full border border-white/10 bg-white/5 blur-2xl" />
 
         <div className="relative mx-auto max-w-7xl">
@@ -109,7 +109,7 @@ export default function PortalEmpresaMobilePage() {
 
           <div className="grid gap-16 pt-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-20">
             <div className="space-y-8">
-              <div className="inline-flex rounded-full border border-[#91A8F3]/25 bg-[#242c48]/50 px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#d8e1fb]">
+              <div className="inline-flex rounded-full border border-[#91A8F3]/25 bg-[#122053]/50 px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.28em] text-[#D7E0FC]">
                 Versão mobile
               </div>
 
@@ -189,7 +189,7 @@ export default function PortalEmpresaMobilePage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-12 text-center">
-          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-linear-to-r from-[#91A8F3] to-[#c5d4ff]" />
+          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-linear-to-r from-[#91A8F3] to-[#B9C9FA]" />
           <h2 className="font-['Syne'] text-3xl font-bold md:text-5xl">
             Recursos que facilitam a rotina empresarial
           </h2>
@@ -205,11 +205,11 @@ export default function PortalEmpresaMobilePage() {
               key={feature.title}
               className="group overflow-hidden rounded-[30px] border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.25)] backdrop-blur-md transition hover:-translate-y-1"
             >
-              <div className="overflow-hidden rounded-t-[30px] bg-[#0B1622]">
+              <div className="overflow-hidden rounded-t-[30px] bg-[#0E1942]">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="aspect-16/10 w-full object-contain bg-[#0B1622] transition duration-300 group-hover:scale-[1.02]"
+                  className="aspect-16/10 w-full object-contain bg-[#0E1942] transition duration-300 group-hover:scale-[1.02]"
                 />
               </div>
 
@@ -286,9 +286,9 @@ export default function PortalEmpresaMobilePage() {
                 key={item.step}
                 className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
               >
-                <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#0b1020] bg-[#91A8F3] md:block" />
+                <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#122053] bg-[#91A8F3] md:block" />
 
-                <div className="inline-flex w-fit rounded-full bg-[#242c48] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e1fb]">
+                <div className="inline-flex w-fit rounded-full bg-[#122053] px-4 py-2 font-['Manrope'] text-xs font-semibold uppercase tracking-[0.22em] text-[#D7E0FC]">
                   Etapa {item.step}
                 </div>
 
@@ -307,10 +307,10 @@ export default function PortalEmpresaMobilePage() {
       </section>
 
       <section className="px-6 pb-24 pt-12 md:px-8">
-        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#242c48_0%,#313b60_55%,#adb9df_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
+        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#0E1942_0%,#122053_55%,#91A8F3_140%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#e1e7f8]">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#E3EAFD]">
                 Portal Empresa Mobile
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
@@ -325,7 +325,7 @@ export default function PortalEmpresaMobilePage() {
               <Link
                 to="/portal-empresa"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] transition hover:bg-[#eef2fb]"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 font-['Manrope'] text-base font-semibold text-[#122053] transition hover:bg-[#EEF2FE]"
               >
                 Versão web
               </Link>

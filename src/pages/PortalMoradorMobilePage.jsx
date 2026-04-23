@@ -120,12 +120,12 @@ export default function PortalMoradorMobilePage() {
 
 
   return (
-    <div className="min-h-screen bg-[#07111B] text-white">
+    <div className="min-h-screen bg-[#0F2537] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
         <div className="absolute inset-0 opacity-80">
-          <div className="absolute -left-30 -top-30 h-80 w-[320px] rounded-full bg-[#57B6FF]/15 blur-3xl" />
-          <div className="absolute -right-25 top-30 h-70 w-70 rounded-full bg-cyan-400/10 blur-3xl" />
-          <div className="absolute -bottom-35 left-1/2 h-75 w-75 -translate-x-1/2 rounded-full bg-sky-500/10 blur-3xl" />
+          <div className="absolute -left-30 -top-30 h-80 w-[320px] rounded-full bg-[#53AEF4]/15 blur-3xl" />
+          <div className="absolute -right-25 top-30 h-70 w-70 rounded-full bg-[#53AEF4]/10 blur-3xl" />
+          <div className="absolute -bottom-35 left-1/2 h-75 w-75 -translate-x-1/2 rounded-full bg-[#53AEF4]/10 blur-3xl" />
         </div>
 
         <div className="relative mx-auto max-w-7xl">
@@ -133,7 +133,7 @@ export default function PortalMoradorMobilePage() {
 
           <div className="grid gap-16 pt-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:pt-20">
             <div className="space-y-8">
-              <div className="inline-flex rounded-full border border-cyan-300/25 bg-cyan-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-cyan-100">
+              <div className="inline-flex rounded-full border border-[#53AEF4]/25 bg-[#53AEF4]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#BFE3FC]">
                 Versão mobile
               </div>
 
@@ -155,7 +155,7 @@ export default function PortalMoradorMobilePage() {
                   href={APKUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-2xl bg-linear-to-r from-[#57B6FF] to-cyan-400 px-6 py-4 text-center text-base font-semibold text-[#07111B] shadow-[0_20px_60px_rgba(87,182,255,0.25)] transition hover:scale-[1.02]"
+                  className="rounded-2xl bg-linear-to-r from-[#53AEF4] to-[#7EC4F7] px-6 py-4 text-center text-base font-semibold text-[#0F2537] shadow-[0_20px_60px_rgba(83,174,244,0.25)] transition hover:scale-[1.02]"
                 >
                   Baixar na Google Play
                 </a>
@@ -174,7 +174,7 @@ export default function PortalMoradorMobilePage() {
             </div>
 
             <div className="relative mx-auto flex w-full max-w-2xl justify-center">
-              <div className="absolute inset-auto top-16 h-72 w-72 rounded-full bg-[#57B6FF]/20 blur-3xl" />
+              <div className="absolute inset-auto top-16 h-72 w-72 rounded-full bg-[#53AEF4]/20 blur-3xl" />
 
               <div className="relative grid w-full max-w-2xl grid-cols-2 gap-5">
                 <div className="translate-y-8 rounded-[28px] border border-white/10 bg-white/5 p-3 backdrop-blur-xl">
@@ -218,7 +218,7 @@ export default function PortalMoradorMobilePage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-12 text-center">
-          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-linear-to-r from-[#57B6FF] to-cyan-300" />
+          <div className="mx-auto mb-4 h-1 w-24 rounded-full bg-linear-to-r from-[#53AEF4] to-[#7EC4F7]" />
           <h2 className="text-3xl font-bold md:text-5xl">
             Recursos que facilitam sua rotina
           </h2>
@@ -234,11 +234,11 @@ export default function PortalMoradorMobilePage() {
               key={feature.title}
               className="group overflow-hidden rounded-[30px] border border-white/10 bg-white/5 shadow-[0_20px_80px_rgba(0,0,0,0.25)] backdrop-blur-md transition hover:-translate-y-1"
             >
-              <div className="overflow-hidden rounded-t-[30px] bg-[#0B1622]">
+              <div className="overflow-hidden rounded-t-[30px] bg-[#0C1D2C]">
                 <img
                   src={feature.image}
                   alt={feature.title}
-                  className="aspect-16/10 w-full object-contain bg-[#0B1622] transition duration-300 group-hover:scale-[1.02]"
+                  className="aspect-16/10 w-full object-contain bg-[#0C1D2C] transition duration-300 group-hover:scale-[1.02]"
                 />
               </div>
 
@@ -258,7 +258,7 @@ export default function PortalMoradorMobilePage() {
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200/80">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#9ED5FA]/80">
               Funcionalidades do app
             </p>
             <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight md:text-5xl">
@@ -293,7 +293,7 @@ export default function PortalMoradorMobilePage() {
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200/80">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#9ED5FA]/80">
               Jornada do morador
             </p>
             <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight md:text-5xl">
@@ -308,7 +308,7 @@ export default function PortalMoradorMobilePage() {
         </div>
 
         <div className="relative">
-          <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-cyan-300/60 via-cyan-300/25 to-transparent md:block" />
+          <div className="absolute left-4 top-0 hidden h-full w-px bg-linear-to-b from-[#53AEF4]/60 via-[#53AEF4]/25 to-transparent md:block" />
 
           <div className="space-y-6">
             {mobileTimeline.map((item) => (
@@ -316,9 +316,9 @@ export default function PortalMoradorMobilePage() {
                 key={item.step}
                 className="relative grid gap-4 rounded-4xl border border-white/10 bg-white/5 p-6 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur md:grid-cols-[120px_1fr] md:items-start md:pl-12"
               >
-                <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#07111B] bg-cyan-300 md:block" />
+                <div className="absolute left-1.75 top-8 hidden h-4 w-4 rounded-full border-4 border-[#0F2537] bg-[#53AEF4] md:block" />
 
-                <div className="inline-flex w-fit rounded-full bg-[#0B1622] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-cyan-100">
+                <div className="inline-flex w-fit rounded-full bg-[#0C1D2C] px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#BFE3FC]">
                   Etapa {item.step}
                 </div>
 
@@ -337,10 +337,10 @@ export default function PortalMoradorMobilePage() {
       </section>
 
       <section className="px-6 pb-24 pt-12 md:px-8">
-        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#16324F_0%,#214E78_58%,#3A6E99_100%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
+        <div className="mx-auto max-w-7xl rounded-[42px] bg-[linear-gradient(135deg,#0C1D2C_0%,#0F2537_58%,#53AEF4_100%)] px-8 py-10 text-white shadow-[0_30px_100px_rgba(0,0,0,0.22)] md:px-12 md:py-14">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#e1e7f8]">
+              <p className="font-['Manrope'] text-xs font-semibold uppercase tracking-[0.3em] text-[#D4EEFE]">
                 Portal Morador Mobile
               </p>
               <h2 className="mt-4 font-['Syne'] text-4xl leading-tight tracking-[-0.05em] md:text-5xl">
@@ -355,7 +355,7 @@ export default function PortalMoradorMobilePage() {
               <Link
                 to="/portal-morador"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 font-['Manrope'] text-base font-semibold text-[#242c48] transition hover:bg-[#eef2fb]"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-4 font-['Manrope'] text-base font-semibold text-[#0F2537] transition hover:bg-[#DFF1FE]"
               >
                 Versão web
               </Link>
