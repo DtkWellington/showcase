@@ -6,7 +6,7 @@ import { Copyright } from "../components/portal/Copyright";
 const mobileHighlights = [
   {
     title: "Versão app exclusiva",
-    text: "O aplicativo foi desenvolvido para o morador, com foco em autonomia, praticidade e acesso rapido as informações da residência.",
+    text: "O aplicativo foi desenvolvido para o morador, com foco em autonomia, praticidade e acesso rápido as informações da residência.",
   },
   {
     title: "Rotina mais simples",
@@ -14,7 +14,7 @@ const mobileHighlights = [
   },
   {
     title: "Integração com o detk Acesso",
-    text: "O app se conecta ao ecossistema do condomínio para apoiar liberacoes, acompanhamento de acessos e comunicação com a administração.",
+    text: "O app se conecta ao ecossistema do condomínio para apoiar liberações, acompanhamento de acessos e comunicação com a administração.",
   },
 ];
 
@@ -22,7 +22,7 @@ const residentModules = [
   {
     title: "Agendamento de visitantes",
     description:
-      "Realize o agendamento de visitantes de forma simples e rapida, com liberação automatica de acesso no momento da entrada e dupla checagem no check-in.",
+      "Realize o agendamento de visitantes de forma simples e rápida, com liberação automática de acesso no momento da entrada e dupla checagem no check-in.",
   },
   {
     title: "Histórico de acesso",
@@ -32,20 +32,20 @@ const residentModules = [
   {
     title: "Documentos",
     description:
-      "Consulte atas, relatorios, regulamentos e outros materiais compartilhados pela administração em um único lugar.",
+      "Consulte atas, relatórios, regulamentos e outros materiais compartilhados pela administração em um único lugar.",
   },
   {
-    title: "Reserva de espaco",
+    title: "Reserva de espaço",
     description:
-      "Visualize disponibilidade, faca agendamentos e garanta o uso organizado das areas compartilhadas do condomínio.",
+      "Visualize disponibilidade, faça agendamentos e garanta o uso organizado das áreas compartilhadas do condomínio.",
   },
   {
-    title: "Botao de pânico(SOS)",
+    title: "Botão de pânico (SOS)",
     description:
-      "Na tela inicial, o morador pode acionar rapidamente o recurso em situações entendidas como de extrema emergencia.",
+      "Na tela inicial, o morador pode acionar rapidamente o recurso em situações entendidas como de extrema emergência.",
   },
   {
-    title: "comunicação com a administração",
+    title: "Comunicação com a administração",
     description:
       "O app aproxima o morador da administração com informações oficiais, avisos relevantes e tratativas ligadas a rotina da residência.",
   },
@@ -55,27 +55,25 @@ const mobileTimeline = [
   {
     step: "01",
     title: "Entrar no app",
-    text: "O morador acessa o Portal Morador pelo celular com uma experiência preparada para uso rapido no dia a dia.",
+    text: "O morador acessa o Portal Morador pelo celular com uma experiência preparada para uso rápido no dia a dia.",
   },
   {
     step: "02",
     title: "Consultar informações",
-    text: "Avisos, documentos, acessos, reservas e outros dados importantes ficam disponiveis em um único lugar.",
+    text: "Avisos, documentos, acessos, reservas e outros dados importantes ficam disponíveis em um único lugar.",
   },
   {
     step: "03",
     title: "Executar a rotina",
-    text: "Agendar visitantes, reservar espacos, acompanhar encomendas e registrar ficha de viagem passam a exigir menos atrito.",
+    text: "Agendar visitantes, reservar espaços, acompanhar encomendas e registrar ficha de viagem.",
   },
   {
     step: "04",
     title: "Ganhar autonomia",
-    text: "O aplicativo reduz dependencias operacionais e entrega mais controle para o morador sobre as demandas ligadas a residência.",
+    text: "O aplicativo reduz dependências operacionais e entrega mais controle para o morador sobre as demandas ligadas a residência.",
   },
 ];
-
-export default function PortalMoradorMobilePage() {
-  const APKUrl =
+ const APKUrl =
     "https://play.google.com/store/apps/details?id=com.grupodetk.appportalmorador.app_portalmorador";
   const IOSUrl =
     "https://apps.apple.com/br/app/portal-morador/id6745190100";
@@ -84,41 +82,47 @@ export default function PortalMoradorMobilePage() {
     {
       title: "Reservas",
       description:
-        "Consulte a disponibilidade dos espacos e reserve datas e horarios com mais autonomia, seguindo as regras do condomínio.",
+        "Consulte a disponibilidade dos espaços e reserve datas e horários com mais autonomia, seguindo as regras do condomínio.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Reservas2.png",
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/app_reservas.png",
     },
     {
       title: "Ficha de Viagem",
       description:
-        "Registre a ausencia, notifique a administração e acompanhe a tratativa com chat integrado para comunicação direta.",
+        "Registre a ausência, notifique a administração e acompanhe a tratativa com chat integrado para comunicação direta.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/FichaViagem.png",
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/app_ficha_viagens.png",
     },
     {
       title: "Encomendas",
       description:
         "Receba notificações sobre entregas e acompanhe o processo de retirada com mais agilidade e transparência.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Encomenda%20(2).png",
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/app_encomenda.png",
     },
     {
       title: "Avisos",
       description:
         "Tenha acesso ao mural de avisos do condomínio em um canal oficial e sempre atualizado.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/Avisos.png",
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/app_avisos.png",
     },
     {
       title: "Autenticação no App",
       description:
         "Mais segurança para acessar os recursos do Portal Morador e usar o aplicativo com confiabilidade no dia a dia.",
       image:
-        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/AutenticacaoApp%20(1).png",
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/app_autenticacao.png",
     },
+    {
+      title: "Elevador",
+      description:
+        "Integração com o sistema de elevadores para liberar acesso de moradores e visitantes de forma prática e segura.",
+      image:
+        "https://upsxlmiuvthqqxvwhzar.supabase.co/storage/v1/object/public/img/novasFuncoes/app_elevador.png",      
+    }
   ];
-
-
+export default function PortalMoradorMobilePage() {
   return (
     <div className="min-h-screen bg-[#0F2537] text-white">
       <section className="relative overflow-hidden px-6 pb-20 pt-6 md:px-8 md:pb-28">
@@ -223,7 +227,7 @@ export default function PortalMoradorMobilePage() {
             Recursos que facilitam sua rotina
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
-            Uma experiência pensada para moradores com mais organizacao,
+            Uma experiência pensada para moradores com mais organização,
             comunicação e segurança em um so lugar.
           </p>
         </div>
@@ -267,8 +271,8 @@ export default function PortalMoradorMobilePage() {
           </div>
 
           <p className="max-w-xl text-base leading-8 text-slate-300">
-            Esta e a versão voltada para o morador, reunindo recursos praticos
-            para consulta, organizacao da rotina e comunicação com a
+            Esta e a versão voltada para o morador, reunindo recursos práticos
+            para consulta, organização da rotina e comunicação com a
             administração.
           </p>
         </div>
@@ -302,7 +306,7 @@ export default function PortalMoradorMobilePage() {
           </div>
 
           <p className="max-w-xl text-base leading-8 text-slate-300">
-            O aplicativo foi estruturado para reduzir atrito e tornar a Gestão
+            O aplicativo foi estruturado para reduzir atrito e tornar a gestão
             da residência mais simples para quem mora no condomínio.
           </p>
         </div>
